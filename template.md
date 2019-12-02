@@ -1,6 +1,7 @@
 #### Navigation
-* [Home](http://ncdulo.github.io/)
-* [Projects](http://ncdulo.github.io/projects)
+* [Home](https://ncdulo.github.io/)
+* [About](https://ncdulo.github.io/about)
+* [Projects](https://ncdulo.github.io/projects)
 
 # Page Name
 Some description here. Usually longer.
