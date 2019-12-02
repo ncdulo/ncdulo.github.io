@@ -1,3 +1,7 @@
+#### Navigation
+* [Home](http://ncdulo.github.io/)
+* [Projects](http://ncdulo.github.io/projects)
+
 # Projects
 Link to all of my [Github Repositories](https://github.com/ncdulo).
 ## Emacs
