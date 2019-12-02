@@ -2,7 +2,7 @@
 
 #### Navigation
 * [Home](http://ncdulo.github.io/)
-* [Projects](http://ncdulo.github.io/projects.md)
+* [Projects](http://ncdulo.github.io/projects)
 
 ## Does it do things?
 ### Smaller words
