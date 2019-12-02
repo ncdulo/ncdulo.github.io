@@ -1,5 +1,8 @@
 # ncdulo.github.io
-This is a test file
+
+#### Navigation
+* [Home](http://ncdulo.github.io/)
+* [Projects](http://ncdulo.github.io/projects.md)
 
 ## Does it do things?
 ### Smaller words
