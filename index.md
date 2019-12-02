@@ -1,12 +1,9 @@
-# ncdulo.github.io
-
 #### Navigation
 * [Home](http://ncdulo.github.io/)
 * [Projects](http://ncdulo.github.io/projects)
 
-## Does it do things?
-### Smaller words
-I'm *not* sure what I'm doing.
+## Introduction
+What will be written about here? Is this for learning, ranting, exploring? 
 
 ## Syntax Highlighting Test
 Just try some different languages out, see how it all flows together. Get a feel for the system.
