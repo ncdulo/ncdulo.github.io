@@ -19,3 +19,6 @@ Collection of xmonad and friends configuration. Has not been used since ~2012-13
 Simple library for conversion of Roman numerals. Include GTK3 and terminal interfaces.
 ### [Baby's First Roguelike](https://github.com/ncdulo/roguelike)
 Simple python 3.6 roguelike based on the Revised LibTCOD Tutorial.
+## Miscellaneous
+### [fortune-mod-mythical-linux](https://github.com/ncdulo/fortune-mod-mythical-linux)
+A collection of various Phate-isms and Tredixions. Mod for `fortune` which displays an assorted collection of quotes from the Mythical Linux Discord. More of a fun project for me and members on the discord, but free for anyone who is interested to enjoy.
