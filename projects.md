@@ -15,6 +15,8 @@ My own customized emacs configuration/distribution. Contains some major bugs and
 ### [xmonad](https://github.com/ncdulo/xmonad)
 Collection of xmonad and friends configuration. Has not been used since ~2012-13 and relied on several external programs. Should still be possible to get working though.
 ## Python
+### [PyMaengDa](https://github.com/ncdulo/pymaengda)
+Quick & easy to use kratom burn tracking software.
 ### [PyRoman](https://github.com/ncdulo/pyroman)
 Simple library for conversion of Roman numerals. Include GTK3 and terminal interfaces.
 ### [Baby's First Roguelike](https://github.com/ncdulo/roguelike)
