@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>/dev/ncdulo (Posts about important)</title><link>https://ncdulo.github.io/</link><description></description><atom:link href="https://ncdulo.github.io/tags/important.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="https://github.com/ncdulo"&gt;ncdulo&lt;/a&gt; 
+&lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
+&lt;img alt="Creative Commons License BY-NC-SA"
+style="border-width:0; margin-bottom:12px;"
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Wed, 22 Apr 2020 00:59:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Before you deploy ...</title><link>https://ncdulo.github.io/posts/2020/04/before-you-deploy/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;As a quick reminder -- before you go ahead and begin commiting anything to
+GitHub, there are a few other things you should handle first. Just a quick
+check before going live &lt;code class="docutils literal"&gt;[insert thumbsup emoji]&lt;/code&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Remove test posts&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Alternatively, tidy them up. Make them ready for publish.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pokemon image (Licensing?)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Remove remaining demo content&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;All around final check of all processes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Post creation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;All links and pages working&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Content is correct&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Theme is nice&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>important</category><guid>https://ncdulo.github.io/posts/2020/04/before-you-deploy/</guid><pubDate>Tue, 21 Apr 2020 01:21:50 GMT</pubDate></item></channel></rss>

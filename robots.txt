@@ -1,0 +1,4 @@
+Sitemap: https://ncdulo.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: ncdulo.github.io
