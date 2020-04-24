@@ -19,15 +19,19 @@
  </url>
  <url>
   <loc>https://ncdulo.github.io/archive.html</loc>
-  <lastmod>2020-04-22T01:44:00Z</lastmod>
+  <lastmod>2020-04-23T08:53:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/categories/</loc>
-  <lastmod>2020-04-22T00:59:00Z</lastmod>
+  <lastmod>2020-04-23T08:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/categories/devncdulo/</loc>
   <lastmod>2020-04-22T00:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/categories/gentoo/</loc>
+  <lastmod>2020-04-23T08:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/categories/lifehack/</loc>
@@ -50,6 +54,10 @@
   <lastmod>2020-04-22T00:59:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ncdulo.github.io/posts/2020/04/python3-out-with-the-old-in-with-the-new/</loc>
+  <lastmod>2020-04-23T08:53:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ncdulo.github.io/posts/2020/04/quick-easy-management-of-nikola-website/</loc>
   <lastmod>2020-04-22T01:44:00Z</lastmod>
  </url>
@@ -59,7 +67,7 @@
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/</loc>
-  <lastmod>2020-04-22T01:48:00Z</lastmod>
+  <lastmod>2020-04-23T08:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/blog/</loc>
@@ -78,12 +86,20 @@
   <lastmod>2020-04-22T00:59:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ncdulo.github.io/tags/gentoo/</loc>
+  <lastmod>2020-04-23T08:55:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ncdulo.github.io/tags/git/</loc>
   <lastmod>2020-04-22T01:48:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/important/</loc>
   <lastmod>2020-04-22T00:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/tags/linux/</loc>
+  <lastmod>2020-04-23T08:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/meta/</loc>
@@ -100,6 +116,18 @@
  <url>
   <loc>https://ncdulo.github.io/tags/project/</loc>
   <lastmod>2020-04-22T00:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/tags/python/</loc>
+  <lastmod>2020-04-23T08:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/tags/python2/</loc>
+  <lastmod>2020-04-23T08:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/tags/python3/</loc>
+  <lastmod>2020-04-23T08:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/saving/</loc>

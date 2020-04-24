@@ -3,7 +3,13 @@
 &lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Wed, 22 Apr 2020 23:08:18 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Quick &amp; easy management of Nikola websites</title><link>https://ncdulo.github.io/posts/2020/04/quick-easy-management-of-nikola-website/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;I mentioned a bit about this in my last post -- trouble coming to terms with a
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Fri, 24 Apr 2020 01:53:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Python3: Out with the old, in with the new</title><link>https://ncdulo.github.io/posts/2020/04/python3-out-with-the-old-in-with-the-new/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;Oh, happy day! I truly do enjoy Python version bumps. With &lt;cite&gt;Python 2&lt;/cite&gt; at EOL,
+and &lt;a class="reference external" href="https://www.gentoo.org/"&gt;Gentoo Linux&lt;/a&gt; making big moves over the past couple of months to bump the
+Python3 default target to &lt;cite&gt;Python 3.7&lt;/cite&gt;, it has been a very exciting time for
+me to be working so much with Python. Though a bit confusing at times, the
+care and attention put in by the &lt;a class="reference external" href="https://wiki.gentoo.org/wiki/Project:Python"&gt;Gentoo Python Team&lt;/a&gt; has made this an easier
+transition to go through.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://ncdulo.github.io/posts/2020/04/python3-out-with-the-old-in-with-the-new/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>gentoo</category><category>linux</category><category>python</category><category>python2</category><category>python3</category><guid>https://ncdulo.github.io/posts/2020/04/python3-out-with-the-old-in-with-the-new/</guid><pubDate>Thu, 23 Apr 2020 08:53:01 GMT</pubDate></item><item><title>Quick &amp; easy management of Nikola websites</title><link>https://ncdulo.github.io/posts/2020/04/quick-easy-management-of-nikola-website/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;I mentioned a bit about this in my last post -- trouble coming to terms with a
 sensible way to maintain this website in a &lt;cite&gt;Git&lt;/cite&gt; repository. Right under my
 nose it looks like there is a great solution. Not sure how I missed this way
 of handling it so easily. This guide was written with &lt;a class="reference external" href="https://getnikola.com"&gt;Nikola&lt;/a&gt; in mind, but it
