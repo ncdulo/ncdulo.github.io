@@ -170,18 +170,18 @@ happen, you will want to clean up any stray packages with commands such as:</p>
 from your system. <strong>Always</strong> check the list of packages to remove before
 proceeding. If you are uncertain and cannot determine on your own, ask or
 skip over it, leaving the package in question installed.</p>
-<pre class="code sh"><a name="rest_code_bfa26c68d19941b9911b66147724c1d8-1"></a>emerge --depclean --ask
-<a name="rest_code_bfa26c68d19941b9911b66147724c1d8-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_bfa26c68d19941b9911b66147724c1d8-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_bbbe7518b5b344f28e8df2f5ba388603-1"></a>emerge --depclean --ask
+<a name="rest_code_bbbe7518b5b344f28e8df2f5ba388603-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_bbbe7518b5b344f28e8df2f5ba388603-3"></a>emerge --depclean --ask
 </pre>
 <p>Now may be a good time to update your default Python version as well</p>
-<pre class="code text"><a name="rest_code_b14cf2bd794147638b2dce4c6ba83b4b-1"></a>$ eselect python list
-<a name="rest_code_b14cf2bd794147638b2dce4c6ba83b4b-2"></a>  Available Python interpreters, in order of preference:
-<a name="rest_code_b14cf2bd794147638b2dce4c6ba83b4b-3"></a>    [1]   python3.6
-<a name="rest_code_b14cf2bd794147638b2dce4c6ba83b4b-4"></a>    [2]   python3.8 (fallback)
-<a name="rest_code_b14cf2bd794147638b2dce4c6ba83b4b-5"></a>    [3]   python3.7 (fallback)
-<a name="rest_code_b14cf2bd794147638b2dce4c6ba83b4b-6"></a>    [4]   python2.7 (fallback)
-<a name="rest_code_b14cf2bd794147638b2dce4c6ba83b4b-7"></a>$ sudo eselect python set 3
+<pre class="code text"><a name="rest_code_aece0ceea9514368b1e740960a4f80e6-1"></a>$ eselect python list
+<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-2"></a>  Available Python interpreters, in order of preference:
+<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-3"></a>    [1]   python3.6
+<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-4"></a>    [2]   python3.8 (fallback)
+<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-5"></a>    [3]   python3.7 (fallback)
+<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-6"></a>    [4]   python2.7 (fallback)
+<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-7"></a>$ sudo eselect python set 3
 </pre>
 <p>This series of commands will check <cite>Portage</cite> for any packages which are no
 longer required, based on the dependency tree. Then update any packages which
@@ -211,9 +211,9 @@ where applicable, without removing any <cite>Python 3.6</cite> support yet.</p>
 from your system. <strong>Always</strong> check the list of packages to remove before
 proceeding. If you are uncertain and cannot determine on your own, ask or
 skip over it, leaving the package in question installed.</p>
-<pre class="code sh"><a name="rest_code_d65759f6d01f40e989f48c3fe4b90dee-1"></a>emerge --depclean --ask
-<a name="rest_code_d65759f6d01f40e989f48c3fe4b90dee-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_d65759f6d01f40e989f48c3fe4b90dee-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_d47e06070bc4423baa75b312287d9f00-1"></a>emerge --depclean --ask
+<a name="rest_code_d47e06070bc4423baa75b312287d9f00-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_d47e06070bc4423baa75b312287d9f00-3"></a>emerge --depclean --ask
 </pre>
 <p>Take the time now to restart any running scripts, daemons, or programs that were
 included in that update list. Then either comment out, or delete the two lines
@@ -234,9 +234,9 @@ is working to push out the updates in time. For those reasons, not every package
 will rebuild into <cite>Python 3.7</cite> support right away. As mentioned in the beginning
 of this section, <strong>pay attention to the `depclean` command -- it can remove
 important system packages!</strong></p>
-<pre class="code sh"><a name="rest_code_e46476dea2fe421cb897a1bb306d1575-1"></a>emerge --depclean --ask
-<a name="rest_code_e46476dea2fe421cb897a1bb306d1575-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_e46476dea2fe421cb897a1bb306d1575-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_065886cb7cb8427e965e36f58a013538-1"></a>emerge --depclean --ask
+<a name="rest_code_065886cb7cb8427e965e36f58a013538-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_065886cb7cb8427e965e36f58a013538-3"></a>emerge --depclean --ask
 </pre>
 <p>Finally! This all complete, you should be finished up now. Your Gentoo system
 should now be using <cite>Python 3.7</cite> as the default version. Packages should have
