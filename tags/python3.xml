@@ -3,7 +3,7 @@
 &lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Fri, 24 Apr 2020 02:20:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Python3: Out with the old, in with the new</title><link>https://ncdulo.github.io/posts/2020/04/python3-out-with-the-old-in-with-the-new/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;Oh, happy day! I truly do enjoy Python version bumps. With &lt;cite&gt;Python 2&lt;/cite&gt; at EOL,
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Sat, 25 Apr 2020 17:02:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Python3: Out with the old, in with the new</title><link>https://ncdulo.github.io/posts/2020/04/python3-out-with-the-old-in-with-the-new/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;Oh, happy day! I truly do enjoy Python version bumps. With &lt;cite&gt;Python 2&lt;/cite&gt; at EOL,
 and &lt;a class="reference external" href="https://www.gentoo.org/"&gt;Gentoo Linux&lt;/a&gt; making big moves over the past couple of months to bump the
 Python3 default target to &lt;cite&gt;Python 3.7&lt;/cite&gt;, it has been a very exciting time for
 me to be working so much with Python. Though a bit confusing at times, the

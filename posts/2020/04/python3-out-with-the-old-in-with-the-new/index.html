@@ -78,11 +78,10 @@ navbar-dark bg-dark
         
         
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Python3: Out with the old, in with the new</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Python3: Out with the old, in with the&nbsp;new</a></h1>
 
         <div class="metadata">
-            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    ncdulo
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">&nbsp;ncdulo
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -103,22 +102,22 @@ and <a class="reference external" href="https://www.gentoo.org/">Gentoo Linux</a
 Python3 default target to <cite>Python 3.7</cite>, it has been a very exciting time for
 me to be working so much with Python. Though a bit confusing at times, the
 care and attention put in by the <a class="reference external" href="https://wiki.gentoo.org/wiki/Project:Python">Gentoo Python Team</a> has made this an easier
-transition to go through.</p>
+transition to go&nbsp;through.</p>
 <!-- TEASER_END -->
 <div class="section" id="diff-gentoo">
 <h2><code class="docutils literal">diff gentoo</code></h2>
 <p>As part of my usual morning routine, one of the first things I check on the
 computer is a <code class="docutils literal">diff</code> of the changes introduced to the Gentoo package
-repositories since my last sync <a class="footnote-reference brackets" href="#id2" id="id1">1</a>. Honestly, it's a great way to start the
+repositories since my last sync <a class="footnote-reference brackets" href="#id2" id="id1">1</a>. Honestly, it&#8217;s a great way to start the
 day for me. I highly reccommend the <a class="reference external" href="https://github.com/vaeth/eix/">eix</a> utility for <em>much</em> quicker package
-searching than <cite>Portage</cite> allows for, if nothing else.</p>
-<p>Anyway, the point of that mention -- this morning I noticed <cite>Python 3.8</cite> had
-been bumped to stable on <code class="docutils literal">amd64</code>. Finally! I couldn't quite determine if this
+searching than <cite>Portage</cite> allows for, if nothing&nbsp;else.</p>
+<p>Anyway, the point of that mention &#8212; this morning I noticed <cite>Python 3.8</cite> had
+been bumped to stable on <code class="docutils literal">amd64</code>. Finally! I couldn&#8217;t quite determine if this
 was intended to be another slotted version, or if it would coincide with other
 updates to the <cite>Gentoo Python</cite> ecosystem. Checking a bit deeper into this now,
 I noticed a news item, <a class="reference external" href="https://www.gentoo.org/support/news-items/2020-04-22-python3-7.html">Python 3.7 to become the default target</a>.</p>
 <p>Wow! This is getting exciting! Reading through that was initially a bit
-confusing, but it <em>really</em> made my day. Being that it's a weekday, I did have to
+confusing, but it <em>really</em> made my day. Being that it&#8217;s a weekday, I did have to
 put that on hold and head to work. It did give me an opportunity to read over
 the news item a bit more, and consider how to handle this update. With Python
 being <em>just</em> a bit integral to Gentoo, I have decided to not rush into this,
@@ -127,10 +126,10 @@ the update without modifying either of the <code class="docutils literal">PYTHON
 values. At this moment, if you are using the default targets, no further action
 is required at this time. Simply <code class="docutils literal">emerge <span class="pre">-uDNatv</span> @world</code> as usual, and carry
 on. For me, the only Python related change there was pulling in version 3.8 as
-it is now marked stable. At least on <code class="docutils literal">amd64</code> that is.</p>
+it is now marked stable. At least on <code class="docutils literal">amd64</code> that&nbsp;is.</p>
 </div>
 <div class="section" id="what-if-i-don-t-want-to-wait">
-<h2>What if I don't want to wait?</h2>
+<h2>What if I don&#8217;t want to&nbsp;wait?</h2>
 <p>Two weeks is quite a long time away, I know. Thankfully, you can go ahead with
 the migration, if you like. How cleanly, or painfully this may happen will
 somewhat depend on the packages installed to your system which utilize <cite>Python
@@ -138,50 +137,49 @@ somewhat depend on the packages installed to your system which utilize <cite>Pyt
 that version, you may wish to apply the update in parts, described below.
 Alternatively, if those programs can be stopped during the update, it may help
 ensure no errors occur. The news post linked <a class="reference external" href="https://www.gentoo.org/support/news-items/2020-04-22-python3-7.html">here</a> does mention that already
-loaded &amp; running programs should not encounter errors during this update.
+loaded <span class="amp">&amp;</span> running programs should not encounter errors during this update.
 However, if they are restarted or load additional modules during this process,
 there may be errors. If you <em>do</em> keep them running during the update, you will
 need to restart them after it has completed so they can load up again using the
 new <cite>Python 3.7</cite> target they will have been rebuilt for. My personal
 recommendation is to apply the update in parts to minimize any risk of breakage
-to currently running programs.</p>
+to currently running&nbsp;programs.</p>
 <div class="sidebar">
-<p class="sidebar-title">Why reiterate?</p>
+<p class="sidebar-title">Why&nbsp;reiterate?</p>
 <p>The <cite>Gentoo News</cite> post lists out all of the relevant steps, though I at first
 had a slight bit of difficulty making them all out. Thus I have compiled the
-steps here, with my own thoughts in hope it may be of some help to another
-person.</p>
+steps here, with my own thoughts in hope it may be of some help to another&nbsp;person.</p>
 </div>
 </div>
 <div class="section" id="how-do-we-do-this">
-<h2>How do we do this?</h2>
+<h2>How do we do&nbsp;this?</h2>
 <p>The news item lists out all of the relevant steps, and should provide ample
 information to proceed without any major issues. The processes laid out below
 come from that news item, with my own thoughts. Three different scenarios are
-described below</p>
+described&nbsp;below</p>
 <div class="section" id="update-all-at-once">
-<h3>Update all at once</h3>
+<h3>Update all at&nbsp;once</h3>
 <p>So long as you have not overriden either <code class="docutils literal">PYTHON_{TARGETS,SINGLE_TARGET}</code> on
-your system, the update should happen "When It's Ready™". This is expected to be
+your system, the update should happen &#8220;When It&#8217;s Ready™&#8221;. This is expected to be
 on, or after May 05, 2020 as per the <cite>Gentoo News</cite> item. Simply stay on top
-of your regular system updates and it will happen on it's own. Once it <em>does</em>
-happen, you will want to clean up any stray packages with commands such as:</p>
+of your regular system updates and it will happen on it&#8217;s own. Once it <em>does</em>
+happen, you will want to clean up any stray packages with commands such&nbsp;as:</p>
 <p class="float-left alert alert-danger">The <code class="docutils literal">depclean</code> command has the the potential to remove important packages
 from your system. <strong>Always</strong> check the list of packages to remove before
 proceeding. If you are uncertain and cannot determine on your own, ask or
-skip over it, leaving the package in question installed.</p>
-<pre class="code sh"><a name="rest_code_bbbe7518b5b344f28e8df2f5ba388603-1"></a>emerge --depclean --ask
-<a name="rest_code_bbbe7518b5b344f28e8df2f5ba388603-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_bbbe7518b5b344f28e8df2f5ba388603-3"></a>emerge --depclean --ask
+skip over it, leaving the package in question&nbsp;installed.</p>
+<pre class="code sh"><a name="rest_code_d89f241e8ba6471c8b3a131a1f7b53fc-1"></a>emerge --depclean --ask
+<a name="rest_code_d89f241e8ba6471c8b3a131a1f7b53fc-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_d89f241e8ba6471c8b3a131a1f7b53fc-3"></a>emerge --depclean --ask
 </pre>
-<p>Now may be a good time to update your default Python version as well</p>
-<pre class="code text"><a name="rest_code_aece0ceea9514368b1e740960a4f80e6-1"></a>$ eselect python list
-<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-2"></a>  Available Python interpreters, in order of preference:
-<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-3"></a>    [1]   python3.6
-<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-4"></a>    [2]   python3.8 (fallback)
-<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-5"></a>    [3]   python3.7 (fallback)
-<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-6"></a>    [4]   python2.7 (fallback)
-<a name="rest_code_aece0ceea9514368b1e740960a4f80e6-7"></a>$ sudo eselect python set 3
+<p>Now may be a good time to update your default Python version as&nbsp;well</p>
+<pre class="code text"><a name="rest_code_c27640b0508d42a8b95c2730b435402c-1"></a>$ eselect python list
+<a name="rest_code_c27640b0508d42a8b95c2730b435402c-2"></a>  Available Python interpreters, in order of preference:
+<a name="rest_code_c27640b0508d42a8b95c2730b435402c-3"></a>    [1]   python3.6
+<a name="rest_code_c27640b0508d42a8b95c2730b435402c-4"></a>    [2]   python3.8 (fallback)
+<a name="rest_code_c27640b0508d42a8b95c2730b435402c-5"></a>    [3]   python3.7 (fallback)
+<a name="rest_code_c27640b0508d42a8b95c2730b435402c-6"></a>    [4]   python2.7 (fallback)
+<a name="rest_code_c27640b0508d42a8b95c2730b435402c-7"></a>$ sudo eselect python set 3
 </pre>
 <p>This series of commands will check <cite>Portage</cite> for any packages which are no
 longer required, based on the dependency tree. Then update any packages which
@@ -189,12 +187,12 @@ have had changed <code class="docutils literal">USE</code> flags (such as <code 
 entire dependency tree into account. Finally, a last <code class="docutils literal"><span class="pre">--depclean</span></code> to clear
 out any new packages which may no longer be required. This should leave your
 system with packages rebuilt to prefer <cite>Python 3.7</cite> whenever possible. Any
-packages installed in the future will follow those new defaults as well.</p>
+packages installed in the future will follow those new defaults as&nbsp;well.</p>
 <p>If you would like to improve the stability of the upgrade, use the steps
-outlined below instead.</p>
+outlined below&nbsp;instead.</p>
 </div>
 <div class="section" id="update-in-stages">
-<h3>Update in stages</h3>
+<h3>Update in&nbsp;stages</h3>
 <p>Temporarily enabling both <cite>Python 3.6</cite> and <cite>Python 3.7</cite> targets may improve
 stability of the upgrade. This will cause the dependencies effected by the
 update to build with support for both versions wherever possible. The file
@@ -206,14 +204,14 @@ new file with a name such as <code class="docutils literal"><span class="pre">/e
 */* PYTHON_SINGLE_TARGETS: -* python3_6</pre>
 <p>With those two lines added, you should proceed with the first stage of the
 update. This will rebuild packages with additional support for <cite>Python 3.7</cite>
-where applicable, without removing any <cite>Python 3.6</cite> support yet.</p>
+where applicable, without removing any <cite>Python 3.6</cite> support&nbsp;yet.</p>
 <p class="float-left alert alert-danger">The <code class="docutils literal">depclean</code> command has the the potential to remove important packages
 from your system. <strong>Always</strong> check the list of packages to remove before
 proceeding. If you are uncertain and cannot determine on your own, ask or
-skip over it, leaving the package in question installed.</p>
-<pre class="code sh"><a name="rest_code_d47e06070bc4423baa75b312287d9f00-1"></a>emerge --depclean --ask
-<a name="rest_code_d47e06070bc4423baa75b312287d9f00-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_d47e06070bc4423baa75b312287d9f00-3"></a>emerge --depclean --ask
+skip over it, leaving the package in question&nbsp;installed.</p>
+<pre class="code sh"><a name="rest_code_c93a5dc4d0a948208b9209e6823bf088-1"></a>emerge --depclean --ask
+<a name="rest_code_c93a5dc4d0a948208b9209e6823bf088-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_c93a5dc4d0a948208b9209e6823bf088-3"></a>emerge --depclean --ask
 </pre>
 <p>Take the time now to restart any running scripts, daemons, or programs that were
 included in that update list. Then either comment out, or delete the two lines
@@ -232,19 +230,19 @@ support will be built, where applicable. Certain packages may not yet have
 been updated to support <cite>Python 3.7</cite>. In these cases, the <a class="reference external" href="https://wiki.gentoo.org/wiki/Project:Python">Gentoo Python Team</a>
 is working to push out the updates in time. For those reasons, not every package
 will rebuild into <cite>Python 3.7</cite> support right away. As mentioned in the beginning
-of this section, <strong>pay attention to the `depclean` command -- it can remove
-important system packages!</strong></p>
-<pre class="code sh"><a name="rest_code_065886cb7cb8427e965e36f58a013538-1"></a>emerge --depclean --ask
-<a name="rest_code_065886cb7cb8427e965e36f58a013538-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_065886cb7cb8427e965e36f58a013538-3"></a>emerge --depclean --ask
+of this section, <strong>pay attention to the `depclean` command &#8212; it can remove
+important system&nbsp;packages!</strong></p>
+<pre class="code sh"><a name="rest_code_9ba87c847e46475b8f4f98b1b560c557-1"></a>emerge --depclean --ask
+<a name="rest_code_9ba87c847e46475b8f4f98b1b560c557-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_9ba87c847e46475b8f4f98b1b560c557-3"></a>emerge --depclean --ask
 </pre>
 <p>Finally! This all complete, you should be finished up now. Your Gentoo system
 should now be using <cite>Python 3.7</cite> as the default version. Packages should have
 been rebuilt to prefer <cite>Python 3.7</cite> over other versions, where possible. And
-packages built in the future will follow in that preference.</p>
+packages built in the future will follow in that&nbsp;preference.</p>
 </div>
 <div class="section" id="postpone-the-update">
-<h3>Postpone the update</h3>
+<h3>Postpone the&nbsp;update</h3>
 <p>Should you not wish to update the system default Python target for whatever
 reason, you can simply block the target. This will prevent <cite>Portage</cite> from
 attempting to build that target, using <cite>Python 3.6</cite> instead as it does
@@ -261,23 +259,23 @@ News</cite> item <a class="reference external" href="https://www.gentoo.org/supp
 </div>
 </div>
 <div class="section" id="in-conclusion">
-<h2>In conclusion</h2>
-<p>With <cite>Python 3.6</cite> no longer receiving bug fixes, and will be approaching it's
+<h2>In&nbsp;conclusion</h2>
+<p>With <cite>Python 3.6</cite> no longer receiving bug fixes, and will be approaching it&#8217;s
 own end-of-life just before Christmas of 2021, it is a good time to update.
 Enjoy the added features such as nanosecond timers in the <code class="docutils literal">time</code> module, or
-Data Classes. Lots more details at official <a class="reference external" href="https://docs.python.org/3/whatsnew/3.7.html">What's new in Python 3.7</a> page.
+Data Classes. Lots more details at official <a class="reference external" href="https://docs.python.org/3/whatsnew/3.7.html">What&#8217;s new in Python 3.7</a> page.
 Whether you update all at once, next year, or jump straight to <cite>Python 3.8</cite>,
 it is important to keep your system regularly updated. This guide was written
 to help facilitate that, and assist any other <cite>Gentoo Linux</cite> users who find
-themselves uncertain on how to proceed.</p>
+themselves uncertain on how to&nbsp;proceed.</p>
 <p class="rubric">Footnotes</p>
 <dl class="footnote brackets">
 <dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd>
 <p>To create, and check the repo <code class="docutils literal">diff</code>, I utilize the <code class="docutils literal">eix</code> utility,
-in combination with Portage's <code class="docutils literal">postsync</code> hook. The method I used to set this
+in combination with Portage&#8217;s <code class="docutils literal">postsync</code> hook. The method I used to set this
 up is on this <a class="reference external" href="https://wiki.gentoo.org/wiki/Eix#Managing_the_cache">Gentoo Wiki</a> page. This utility has become almost essential to
-me as I want to know exactly what changed throughout the repos.</p>
+me as I want to know exactly what changed throughout the&nbsp;repos.</p>
 </dd>
 </dl>
 </div>
@@ -292,7 +290,7 @@ me as I want to know exactly what changed throughout the repos.</p>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../quick-easy-management-of-nikola-website/" rel="prev" title="Quick &amp; easy management of Nikola websites">Previous post</a>
+                <a href="../quick-easy-management-of-nikola-website/" rel="prev" title="Quick &amp; easy management of Nikola websites">Previous&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2020         <a href="https://github.com/ncdulo">ncdulo</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         

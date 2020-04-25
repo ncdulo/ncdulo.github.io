@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="description" content="Deploy Nikola code, and content with GitHub Pages.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quick &amp; easy management of Nikola websites | /dev/ncdulo</title>
+<title>Quick <span class="amp">&amp;</span> easy management of Nikola websites | /dev/ncdulo</title>
 <link href="../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
@@ -78,11 +78,10 @@ navbar-dark bg-dark
         
         
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Quick &amp; easy management of Nikola websites</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Quick <span class="amp">&amp;</span> easy management of Nikola&nbsp;websites</a></h1>
 
         <div class="metadata">
-            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
-                    ncdulo
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">&nbsp;ncdulo
             </span></p>
             <p class="dateline">
             <a href="." rel="bookmark">
@@ -98,7 +97,7 @@ navbar-dark bg-dark
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<p>I mentioned a bit about this in my last post -- trouble coming to terms with a
+<p>I mentioned a bit about this in my last post &#8212; trouble coming to terms with a
 sensible way to maintain this website in a <cite>Git</cite> repository. Right under my
 nose it looks like there is a great solution. Not sure how I missed this way
 of handling it so easily. This guide was written with <a class="reference external" href="https://getnikola.com">Nikola</a> in mind, but it
@@ -108,7 +107,7 @@ can be applied to <em>any</em> project repo on your <cite>GitHub</cite> account.
 user account, or an individual repo. <a class="reference external" href="https://pages.github.com">GitHub Pages</a>. It provides a quick, and
 simple way to serve static content via <cite>GitHub</cite> to web browsers. Free to get
 started with, I have been enjoying my use of it over the past couple months or
-so. As described on their page:</p>
+so. As described on their&nbsp;page:</p>
 <blockquote>
 <div class="line-block">
 <div class="line">Websites for you and your projects.</div>
@@ -117,11 +116,11 @@ so. As described on their page:</p>
 </blockquote>
 <p>Through this service is how I currently host this blog. Creating a repo named in
 the format <code class="docutils literal"><span class="pre">[github_username].github.io</span></code> will get you started. From there, you
-can either push some HTML, or Markdown files (other formats too, I'm sure)
-directly to the master branch and try visiting your page at the URL the repo's
+can either push some HTML, or Markdown files (other formats too, I&#8217;m sure)
+directly to the master branch and try visiting your page at the URL the repo&#8217;s
 name forms. Such as <code class="docutils literal"><span class="pre">https://ncdulo.github.io/</span></code>. You may need to wait a few
-minutes after the push command for GitHub to update. For me, that's generally
-no less than 5-10 minutes.</p>
+minutes after the push command for GitHub to update. For me, that&#8217;s generally
+no less than 5-10&nbsp;minutes.</p>
 <p>This service provides the <em>perfect</em> environment to upload your Nikola output to
 enjoy some free hosting. Using the method below will guide you through a basic
 <strong>project-level</strong> deploy. The output will live in the <code class="docutils literal">docs/</code> folder of
@@ -129,9 +128,9 @@ the <code class="docutils literal">master</code> branch, and a setting will be f
 to serve your content from there. The default method pushes onto a <code class="docutils literal"><span class="pre">gh-pages</span></code>
 branch, which should <em>only</em> contain the files you intend to be served on your
 pages. I am opting for the <code class="docutils literal">docs/</code> method for simplicity at the cost of
-slightly less straight-forward directory heirarchy.</p>
+slightly less straight-forward directory&nbsp;heirarchy.</p>
 <div class="section" id="alright-how-are-we-going-to-do-this">
-<h2>Alright, how are we going to do this?</h2>
+<h2>Alright, how are we going to do&nbsp;this?</h2>
 <p>This guide does not cover the initial setup, or design of your project, website,
 or the repo itself. I am assuming you already have a project repo on <cite>GitHub</cite>,
 some content which should <em>not</em> be part of your web-content, and some content
@@ -143,28 +142,28 @@ any of the variable data, or generated content from being included in the
 repository. This makes testing new content a bit easier for me, as the repo
 will still show up as clean. Once my content is ready to deploy, I replace the
 updated files in <code class="docutils literal">docs/</code> with the output from <code class="docutils literal">content/</code>. You can just as
-easily update <cite>Nikola</cite>'s <code class="docutils literal">conf.py</code> so that your output goes directly to the
+easily update <cite>Nikola</cite>&#8216;s <code class="docutils literal">conf.py</code> so that your output goes directly to the
 <code class="docutils literal">docs/</code> folder, effectively eliminating the need to manually copy when ready
-to deploy.</p>
+to&nbsp;deploy.</p>
 <p>With the repository set up, and your web content living inside of <code class="docutils literal">docs/</code>,
 make sure that you <code class="docutils literal">git push origin master</code> so the content exists in your
 <cite>GitHub</cite> repository as well. From here, we simply toggle a setting so that
-<cite>GitHub</cite> knows which directory and branch to look for your content in.</p>
+<cite>GitHub</cite> knows which directory and branch to look for your content&nbsp;in.</p>
 <ol class="arabic simple">
-<li><p>From your <cite>GitHub</cite> project's repository, click on the <cite>Settings</cite> link in
+<li><p>From your <cite>GitHub</cite> project&#8217;s repository, click on the <cite>Settings</cite> link in
 the menu bar just beneath the <cite>Star</cite>, <cite>Fork</cite> and <cite>Watch</cite> links.</p></li>
 <li><p>In the main <cite>Settings</cite> page, scroll down until you reach the <cite>GitHub Pages</cite>
 section.</p></li>
 <li><p>Select the <cite>Source</cite> drop-down menu and select the option which specifies
 <cite>Master branch /docs folder</cite>. Once selected, the change should automatically
-be saved.</p></li>
+be&nbsp;saved.</p></li>
 <li>
 <p>Visit <code class="docutils literal"><span class="pre">https://[GITHUB_USERNAME].github.io/[PROJECT_REPO_NAME]</span></code></p>
 <ul class="simple">
-<li><p>It may take a few minutes for recently pushed changes to appear.</p></li>
+<li><p>It may take a few minutes for recently pushed changes to&nbsp;appear.</p></li>
 </ul>
 </li>
-<li><p>Enjoy your new project page hosting!</p></li>
+<li><p>Enjoy your new project page&nbsp;hosting!</p></li>
 </ol>
 <p>The above steps are mostly borrowed from the <a class="reference external" href="https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch">GitHub Pages documentation</a>. If
 you encounter a problem, or need additional information. The documentation
@@ -173,7 +172,7 @@ such as using Jekyll to build your site from Markdown, or how to set up a
 user-specific <cite>Pages</cite> site.</p>
 </div>
 <div class="section" id="what-about-customizing-nikola-too">
-<h2>What about customizing Nikola too?</h2>
+<h2>What about customizing Nikola&nbsp;too?</h2>
 <p>There is a certain beauty to me when maintaining our modified <a class="reference external" href="https://getnikola.com">Nikola</a> base
 alongside the final output content in the same repository. By using the
 <code class="docutils literal">docs/</code> folder we also eliminate some need for tricks and slightly more
@@ -182,23 +181,23 @@ maintain like this. I can tweak <cite>Nikola</cite> to my hearts content, and ke
 actual <cite>generator</cite> part version controlled. Once I have a new post, or new
 content that I want to make available from the <cite>GitHub Pages</cite> URL, I can
 simply copy the contents of <code class="docutils literal">output/</code> over to <code class="docutils literal">docs/</code> and <code class="docutils literal">git push</code> to
-deploy online.</p>
+deploy&nbsp;online.</p>
 <p>Personally, the way I have chosen to organize the local repo for my <cite>Nikola</cite>
 site makes the attempt to include all resources within the repo. This means
 any theme, plugins, extra files, and content sources living together. For me,
 this keeps it a bit easier to maintain. Of course, the best way to handle your
-organization is whatever works best for <em>you</em> and your team.</p>
+organization is whatever works best for <em>you</em> and your&nbsp;team.</p>
 </div>
 <div class="section" id="can-i-deploy-only-the-content">
-<h2>Can I deploy <em>only</em> the content?</h2>
+<h2>Can I deploy <em>only</em> the&nbsp;content?</h2>
 <p>Of course! That is exactly how I have been handling the initial deploy of
 <code class="docutils literal">/dev/ncdulo</code>. I had a pre-existing <cite>GitHub Pages</cite> site that fell into a lack
 of maintenance as I realized over time the work to keep things working properly.
-If I wanted to update the HTML, or navigation links -- I had to go through each
+If I wanted to update the HTML, or navigation links &#8212; I had to go through each
 file individually to update everything. Not so bad when the site is just a
-handful of pages. Turns into a job of it's own if you want to maintain anything
+handful of pages. Turns into a job of it&#8217;s own if you want to maintain anything
 like a blog. That reason primarily is what got me started searching out a better
-solution. And here we are, having loads of fun with this setup.</p>
+solution. And here we are, having loads of fun with this&nbsp;setup.</p>
 <p>To deploy only the content to a <cite>Pages</cite> site, such as with a user-level site,
 you will need to create a <cite>GitHub</cite> repo with a name following the format of
 <code class="docutils literal">[GITHUB_USERNAME.github.io</code>. With your new repo in hand, go ahead and
@@ -206,15 +205,15 @@ you will need to create a <cite>GitHub</cite> repo with a name following the for
 <code class="docutils literal">README.md</code> file so that any visitors to the actual <cite>GitHub</cite> repo know a bit
 about the site. Otherwise from here, simply copy the <code class="docutils literal">output/</code> directory from
 <cite>Nikola</cite> into the root directory of the new repo you just created. Personally,
-I use the following command to copy my content over.</p>
+I use the following command to copy my content&nbsp;over.</p>
 <p class="alert alert-warning">Notice the <code class="docutils literal">/.</code> directly after the <code class="docutils literal">output</code> named here. This will tell
 <code class="docutils literal">cp</code> to copy the files from <em>within</em> <code class="docutils literal">output</code> rather than copying the
 <code class="docutils literal">output</code> directory itself. This is probably what you want to do.
 This command effectively reads as copy the files <em>inside</em> of <code class="docutils literal">output</code> into
 the <code class="docutils literal">ncdulo.github.io</code> directory located one level above our current working
 directory. And copy them recursively so that all sub-directories and files
-within are copied.</p>
-<pre class="code bash"><a name="rest_code_0b3bf8a99e544fc3933c9c525a1768f3-1"></a>cp -r output/. ../ncdulo.github.io
+within are&nbsp;copied.</p>
+<pre class="code bash"><a name="rest_code_990bde4e74064eafbca25cb0aa641e7d-1"></a>cp -r output/. ../ncdulo.github.io
 </pre>
 <p>Once the files are copied over, I suggest double-checking the directory
 structure. Make sure pages are where they should be in your new repo, and that
@@ -223,25 +222,25 @@ the master branch up to <cite>GitHub</cite> once you are ready to deploy. Simply
 <code class="docutils literal"><span class="pre">https://[GITHUB_USERNAME].github.io</span></code> and check it out! It may take 5-10
 minutes after your push before the page appears online. The full documentation
 for creating a <cite>GitHub Pages</cite> site using this method can be found at
-<a class="reference external" href="https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages Help</a></p>
+<a class="reference external" href="https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">GitHub Pages&nbsp;Help</a></p>
 <p class="alert alert-warning">If any of the files within your content include an underscore as their first
 character, <cite>Jekyll</cite> may decide they are special files and not publish them.
 To avoid this behavior, create a file named <code class="docutils literal">.nojekyll</code> inside the root
 directory of the repo and commit to <code class="docutils literal">master</code>. If Jekyll sees this file, it
-does not parse your repo and should not hide these "special files".</p>
+does not parse your repo and should not hide these &#8220;special&nbsp;files&#8221;.</p>
 </div>
 <div class="section" id="closing-remarks">
-<h2>Closing remarks</h2>
+<h2>Closing&nbsp;remarks</h2>
 <p>This is intended as a temporary solution for me. At least until I can do a final
 bit of thinking, and create a standalone project repo for this site. In the end,
 I plan to host this content on a domain using a proper web host. There are
 things I would like to try out that <cite>GitHub Pages</cite> cannot do. Such as dynamic
 content, and expanding my <cite>Full Stack</cite> related knowledge through managing a
 VPS. The <cite>Nikola</cite> portion of <code class="docutils literal">/dev/ncdulo</code> will live in a GitHub repository,
-but the content will be hosted separately.</p>
-<p>In all, this has been a lot of fun as I settle in to a new work flow. I'm not
+but the content will be hosted&nbsp;separately.</p>
+<p>In all, this has been a lot of fun as I settle in to a new work flow. I&#8217;m not
 sure the methods detailed above will be the best for any, or every situation.
-This is simply to share my thought processes, and possibly help other's who may
+This is simply to share my thought processes, and possibly help other&#8217;s who may
 find themselves in a similar situation. If there are any issues found with this
 post, please inform me via <cite>GitHub</cite> <a class="reference external" href="https://github.com/ncdulo">@ncdulo</a>.</p>
 </div>
@@ -255,10 +254,10 @@ post, please inform me via <cite>GitHub</cite> <a class="reference external" hre
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../preparation-for-deploy-final-thoughts/" rel="prev" title="Preparation for deploy, final thoughts">Previous post</a>
+                <a href="../preparation-for-deploy-final-thoughts/" rel="prev" title="Preparation for deploy, final thoughts">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../python3-out-with-the-old-in-with-the-new/" rel="next" title="Python3: Out with the old, in with the new">Next post</a>
+                <a href="../python3-out-with-the-old-in-with-the-new/" rel="next" title="Python3: Out with the old, in with the new">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2020         <a href="https://github.com/ncdulo">ncdulo</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         

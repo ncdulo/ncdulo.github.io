@@ -3,7 +3,7 @@
 &lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Fri, 24 Apr 2020 02:20:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Before you deploy ...</title><link>https://ncdulo.github.io/posts/2020/04/before-you-deploy/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;As a quick reminder -- before you go ahead and begin commiting anything to
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Sat, 25 Apr 2020 17:02:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Before you deploy ...</title><link>https://ncdulo.github.io/posts/2020/04/before-you-deploy/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;As a quick reminder -- before you go ahead and begin commiting anything to
 GitHub, there are a few other things you should handle first. Just a quick
 check before going live &lt;code class="docutils literal"&gt;[insert thumbsup emoji]&lt;/code&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
