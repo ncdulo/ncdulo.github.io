@@ -7,12 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Python3: Out with the old, in with the new | /dev/ncdulo</title>
 <link href="../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<meta name="theme-color" content="#5670d4">
+<meta name="theme-color" content="#6c757d">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../../rss.xml">
 <link rel="canonical" href="https://ncdulo.github.io/posts/2020/04/python3-out-with-the-old-in-with-the-new/">
 <link rel="icon" href="../../../../favicon.ico" sizes="16x16">
-<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="ncdulo">
+<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><meta name="robots" contents="index,follow">
+<meta name="revisit-after" contents="7 days">
+<meta name="copyright" content="ncdulo 2020">
+<meta name="author" content="ncdulo">
 <link rel="prev" href="../quick-easy-management-of-nikola-website/" title="Quick &amp; easy management of Nikola websites" type="text/html">
 <meta property="og:site_name" content="/dev/ncdulo">
 <meta property="og:title" content="Python3: Out with the old, in with the new">
@@ -168,18 +171,18 @@ happen, you will want to clean up any stray packages with commands such&nbsp;as:
 from your system. <strong>Always</strong> check the list of packages to remove before
 proceeding. If you are uncertain and cannot determine on your own, ask or
 skip over it, leaving the package in question&nbsp;installed.</p>
-<pre class="code sh"><a name="rest_code_d89f241e8ba6471c8b3a131a1f7b53fc-1"></a>emerge --depclean --ask
-<a name="rest_code_d89f241e8ba6471c8b3a131a1f7b53fc-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_d89f241e8ba6471c8b3a131a1f7b53fc-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_28c6ee2cacbe407dba3e3febcd95452e-1"></a>emerge --depclean --ask
+<a name="rest_code_28c6ee2cacbe407dba3e3febcd95452e-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_28c6ee2cacbe407dba3e3febcd95452e-3"></a>emerge --depclean --ask
 </pre>
 <p>Now may be a good time to update your default Python version as&nbsp;well</p>
-<pre class="code text"><a name="rest_code_c27640b0508d42a8b95c2730b435402c-1"></a>$ eselect python list
-<a name="rest_code_c27640b0508d42a8b95c2730b435402c-2"></a>  Available Python interpreters, in order of preference:
-<a name="rest_code_c27640b0508d42a8b95c2730b435402c-3"></a>    [1]   python3.6
-<a name="rest_code_c27640b0508d42a8b95c2730b435402c-4"></a>    [2]   python3.8 (fallback)
-<a name="rest_code_c27640b0508d42a8b95c2730b435402c-5"></a>    [3]   python3.7 (fallback)
-<a name="rest_code_c27640b0508d42a8b95c2730b435402c-6"></a>    [4]   python2.7 (fallback)
-<a name="rest_code_c27640b0508d42a8b95c2730b435402c-7"></a>$ sudo eselect python set 3
+<pre class="code text"><a name="rest_code_871abc727b6f42329ce267a2da0a5ffa-1"></a>$ eselect python list
+<a name="rest_code_871abc727b6f42329ce267a2da0a5ffa-2"></a>  Available Python interpreters, in order of preference:
+<a name="rest_code_871abc727b6f42329ce267a2da0a5ffa-3"></a>    [1]   python3.6
+<a name="rest_code_871abc727b6f42329ce267a2da0a5ffa-4"></a>    [2]   python3.8 (fallback)
+<a name="rest_code_871abc727b6f42329ce267a2da0a5ffa-5"></a>    [3]   python3.7 (fallback)
+<a name="rest_code_871abc727b6f42329ce267a2da0a5ffa-6"></a>    [4]   python2.7 (fallback)
+<a name="rest_code_871abc727b6f42329ce267a2da0a5ffa-7"></a>$ sudo eselect python set 3
 </pre>
 <p>This series of commands will check <cite>Portage</cite> for any packages which are no
 longer required, based on the dependency tree. Then update any packages which
@@ -209,9 +212,9 @@ where applicable, without removing any <cite>Python 3.6</cite> support&nbsp;yet.
 from your system. <strong>Always</strong> check the list of packages to remove before
 proceeding. If you are uncertain and cannot determine on your own, ask or
 skip over it, leaving the package in question&nbsp;installed.</p>
-<pre class="code sh"><a name="rest_code_c93a5dc4d0a948208b9209e6823bf088-1"></a>emerge --depclean --ask
-<a name="rest_code_c93a5dc4d0a948208b9209e6823bf088-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_c93a5dc4d0a948208b9209e6823bf088-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_9b835d25f3014ae7b4659ab68e77b34f-1"></a>emerge --depclean --ask
+<a name="rest_code_9b835d25f3014ae7b4659ab68e77b34f-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_9b835d25f3014ae7b4659ab68e77b34f-3"></a>emerge --depclean --ask
 </pre>
 <p>Take the time now to restart any running scripts, daemons, or programs that were
 included in that update list. Then either comment out, or delete the two lines
@@ -232,9 +235,9 @@ is working to push out the updates in time. For those reasons, not every package
 will rebuild into <cite>Python 3.7</cite> support right away. As mentioned in the beginning
 of this section, <strong>pay attention to the `depclean` command &#8212; it can remove
 important system&nbsp;packages!</strong></p>
-<pre class="code sh"><a name="rest_code_9ba87c847e46475b8f4f98b1b560c557-1"></a>emerge --depclean --ask
-<a name="rest_code_9ba87c847e46475b8f4f98b1b560c557-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_9ba87c847e46475b8f4f98b1b560c557-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_795cee17081b46d5ac86a4e0c8ef35b8-1"></a>emerge --depclean --ask
+<a name="rest_code_795cee17081b46d5ac86a4e0c8ef35b8-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_795cee17081b46d5ac86a4e0c8ef35b8-3"></a>emerge --depclean --ask
 </pre>
 <p>Finally! This all complete, you should be finished up now. Your Gentoo system
 should now be using <cite>Python 3.7</cite> as the default version. Packages should have
@@ -292,10 +295,9 @@ me as I want to know exactly what changed throughout the&nbsp;repos.</p>
 <li class="previous">
                 <a href="../quick-easy-management-of-nikola-website/" rel="prev" title="Quick &amp; easy management of Nikola websites">Previous&nbsp;post</a>
             </li>
-        </ul></nav></aside></article><!--End of body content--><footer id="footer">
-            Contents © 2020         <a href="https://github.com/ncdulo">ncdulo</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
-<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer" class="text-center">
+            Contents © 2020 <a href="https://github.com/ncdulo">ncdulo</a> - Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a> <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Intl License" style="border-width:0; margin-bottom:12px;" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a>
             
             
         </footer>
