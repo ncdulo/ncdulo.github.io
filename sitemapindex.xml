@@ -11,7 +11,7 @@
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/categories/gentoo.xml</loc>
-  <lastmod>2020-04-26T01:39:00Z</lastmod>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/categories/lifehack.xml</loc>
@@ -23,11 +23,11 @@
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/rss.xml</loc>
-  <lastmod>2020-04-26T01:39:00Z</lastmod>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/sitemap.xml</loc>
-  <lastmod>2020-04-26T01:54:00Z</lastmod>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/blog.xml</loc>
@@ -46,8 +46,12 @@
   <lastmod>2020-04-26T01:39:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://ncdulo.github.io/tags/enhancement.xml</loc>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://ncdulo.github.io/tags/gentoo.xml</loc>
-  <lastmod>2020-04-26T01:39:00Z</lastmod>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/git.xml</loc>
@@ -59,7 +63,7 @@
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/linux.xml</loc>
-  <lastmod>2020-04-26T01:39:00Z</lastmod>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/meta.xml</loc>
@@ -72,6 +76,10 @@
  <sitemap>
   <loc>https://ncdulo.github.io/tags/nikola.xml</loc>
   <lastmod>2020-04-26T01:39:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://ncdulo.github.io/tags/portage.xml</loc>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/project.xml</loc>
@@ -92,6 +100,10 @@
  <sitemap>
   <loc>https://ncdulo.github.io/tags/saving.xml</loc>
   <lastmod>2020-04-26T01:39:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://ncdulo.github.io/tags/tweak.xml</loc>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/webdev.xml</loc>

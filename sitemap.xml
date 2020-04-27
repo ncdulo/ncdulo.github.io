@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>https://ncdulo.github.io/archive.html</loc>
-  <lastmod>2020-04-26T01:54:00Z</lastmod>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/categories/</loc>
@@ -50,6 +50,10 @@
   <lastmod>2020-04-26T01:39:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ncdulo.github.io/posts/2020/04/portage-tweaks-enhancements-for-great-good/</loc>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ncdulo.github.io/posts/2020/04/preparation-for-deploy-final-thoughts/</loc>
   <lastmod>2020-04-26T01:39:00Z</lastmod>
  </url>
@@ -67,7 +71,7 @@
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/</loc>
-  <lastmod>2020-04-26T01:39:00Z</lastmod>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/blog/</loc>
@@ -84,6 +88,10 @@
  <url>
   <loc>https://ncdulo.github.io/tags/diy/</loc>
   <lastmod>2020-04-26T01:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/tags/enhancement/</loc>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/gentoo/</loc>
@@ -114,6 +122,10 @@
   <lastmod>2020-04-26T01:39:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ncdulo.github.io/tags/portage/</loc>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ncdulo.github.io/tags/project/</loc>
   <lastmod>2020-04-26T01:39:00Z</lastmod>
  </url>
@@ -132,6 +144,10 @@
  <url>
   <loc>https://ncdulo.github.io/tags/saving/</loc>
   <lastmod>2020-04-26T01:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/tags/tweak/</loc>
+  <lastmod>2020-04-26T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/webdev/</loc>
