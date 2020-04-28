@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>https://ncdulo.github.io/archive.html</loc>
-  <lastmod>2020-04-26T14:44:00Z</lastmod>
+  <lastmod>2020-04-27T22:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/categories/</loc>
-  <lastmod>2020-04-26T01:39:00Z</lastmod>
+  <lastmod>2020-04-27T23:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/categories/devncdulo/</loc>
@@ -32,6 +32,10 @@
  <url>
   <loc>https://ncdulo.github.io/categories/gentoo/</loc>
   <lastmod>2020-04-26T01:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/categories/introspection/</loc>
+  <lastmod>2020-04-27T23:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/categories/lifehack/</loc>
@@ -48,6 +52,10 @@
  <url>
   <loc>https://ncdulo.github.io/posts/2020/04/before-you-deploy/</loc>
   <lastmod>2020-04-26T01:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/posts/2020/04/finding-my-voice-writing-about-writing/</loc>
+  <lastmod>2020-04-27T22:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/posts/2020/04/portage-tweaks-enhancements-for-great-good/</loc>
@@ -71,7 +79,7 @@
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/</loc>
-  <lastmod>2020-04-26T14:44:00Z</lastmod>
+  <lastmod>2020-04-27T23:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/blog/</loc>
@@ -146,11 +154,19 @@
   <lastmod>2020-04-26T01:39:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ncdulo.github.io/tags/thoughts/</loc>
+  <lastmod>2020-04-27T23:03:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ncdulo.github.io/tags/tweak/</loc>
   <lastmod>2020-04-26T14:44:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/webdev/</loc>
   <lastmod>2020-04-26T01:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/tags/writing/</loc>
+  <lastmod>2020-04-27T23:03:00Z</lastmod>
  </url>
 </urlset>
