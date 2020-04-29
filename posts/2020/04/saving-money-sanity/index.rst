@@ -1,6 +1,7 @@
 .. title: Saving money & sanity
 .. slug: saving-money-sanity
 .. date: 2020-04-21 05:05:12 UTC-04:00
+.. updated: 2020-04-29 15:36:12 UTC-04:00
 .. tags: diy, money, saving, coronavirus
 .. category: lifehack
 .. link:
@@ -142,7 +143,7 @@ The finished results, I'm very happy with. No longer need to deal with my hair
 all over the place, and each haircut from here on out will get cheaper and
 cheaper. Considering I only paid around $25 for the hair clippers, this one has
 paid for itself with only a single haircut. And with the potential to save me
-about $100 anually that would normally go the barber, I am a very happy man.
+about $100 annually that would normally go the barber, I am a very happy man.
 
 This one had me a little nervous going into it. Did not want to screw up. Or cut
 it so badly I would need to cut it all off. It turned out much much easier than
@@ -177,7 +178,7 @@ That makes it very easy to pull it out while grocery shopping and start
 collecting your ingredients.
 
 If you're like me, and like to cook in bulk, you can really save on money and
-time spen cooking. One of my favorite foods to cook has been a Crock-pot Chili.
+time spent cooking. One of my favorite foods to cook has been a Crock-pot Chili.
 Incredibly simple to the point it's almost too easy. Yet complex enough to not
 get boring, and very easy to tweak over time to perfection. I'm planning to
 write out a separate post detailing the recipe and how I modified it to suit my
@@ -194,7 +195,7 @@ If you do want to try out that recipe in your crock pot, I cook mine for about
 
 In conclusion
 -------------
-Armed now with some basic, and accesible ideas to DIY your own solutions, it's
+Armed now with some basic, and accessible ideas to DIY your own solutions, it's
 your turn now. Make yourself something nice, save a little money. I can promise
 you experimenting and feeling of 'getting it done' will be very much worth the
 time put in. Not to mention that along with saving money, a lot of the time you

@@ -1,7 +1,7 @@
 .. title: Python3: Out with the old, in with the new
 .. slug: python3-out-with-the-old-in-with-the-new
 .. date: 2020-04-23 04:53:01 UTC-04:00
-.. updated: 2020-04-23 21:43:41 UTC-04:00
+.. updated: 2020-04-29 15:34:41 UTC-04:00
 .. tags: python, gentoo, linux, python2, python3
 .. category: gentoo
 .. link:
@@ -23,7 +23,7 @@ transition to go through.
 As part of my usual morning routine, one of the first things I check on the
 computer is a ``diff`` of the changes introduced to the Gentoo package
 repositories since my last sync [#]_. Honestly, it's a great way to start the
-day for me. I highly reccommend the eix_ utility for *much* quicker package
+day for me. I highly recommend the eix_ utility for *much* quicker package
 searching than `Portage` allows for, if nothing else.
 
 Anyway, the point of that mention -- this morning I noticed `Python 3.8` had
@@ -77,7 +77,7 @@ described below
 
 Update all at once
 ==================
-So long as you have not overriden either ``PYTHON_{TARGETS,SINGLE_TARGET}`` on
+So long as you have not overridden either ``PYTHON_{TARGETS,SINGLE_TARGET}`` on
 your system, the update should happen "When It's Ready™". This is expected to be
 on, or after May 05, 2020 as per the `Gentoo News` item. Simply stay on top
 of your regular system updates and it will happen on it's own. Once it *does*

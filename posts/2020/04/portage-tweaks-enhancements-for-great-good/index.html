@@ -17,7 +17,7 @@
 <meta name="copyright" content="ncdulo 2020">
 <meta name="author" content="ncdulo">
 <link rel="prev" href="../python3-out-with-the-old-in-with-the-new/" title="Python3: Out with the old, in with the new" type="text/html">
-<link rel="next" href="../finding-my-voice-writing-about-writing/" title="Finding my voice: Writing about writing" type="text/html">
+<link rel="next" href="../finding-my-voice-writing-about-writing/" title="Finding my voice -- writing about writing" type="text/html">
 <meta property="og:site_name" content="/dev/ncdulo">
 <meta property="og:title" content="Portage tweaks &amp; enhancements for great good">
 <meta property="og:url" content="https://ncdulo.github.io/posts/2020/04/portage-tweaks-enhancements-for-great-good/">
@@ -90,7 +90,7 @@ navbar-dark bg-dark
             <p class="dateline">
             <a href="." rel="bookmark">
             <time class="published dt-published" datetime="2020-04-26T10:26:30-04:00" itemprop="datePublished" title="2020-04-26 10:26">2020-04-26 10:26</time><span class="updated"> (updated
-                    <time class="updated dt-updated" datetime="2020-04-27T15:07:38-04:00" itemprop="dateUpdated" title="2020-04-27 15:07">2020-04-27 15:07</time>)</span>
+                    <time class="updated dt-updated" datetime="2020-04-29T15:28:38-04:00" itemprop="dateUpdated" title="2020-04-29 15:28">2020-04-29 15:28</time>)</span>
             </a>
             </p>
             
@@ -172,10 +172,10 @@ a directory. The steps will be the same for other files within <code class="docu
 in front of them. Safe practices include making backups of the original files
 before moving them around, or changing them. Feel free to remove any of these
 <code class="docutils literal">*.backup</code> files after verifying everything was&nbsp;sucessful.</p>
-<pre class="code text"><a name="rest_code_b53257a8da054259878016f5ad4ce8a5-1"></a>cp /etc/portage/package.use ~/package.use.backup
-<a name="rest_code_b53257a8da054259878016f5ad4ce8a5-2"></a>mv /etc/portage/package.use /etc/portage/package.use.old
-<a name="rest_code_b53257a8da054259878016f5ad4ce8a5-3"></a>mkdir -p /etc/portage/package.use
-<a name="rest_code_b53257a8da054259878016f5ad4ce8a5-4"></a>mv /etc/portage/package.use.old /etc/portage/package.use/use_flags
+<pre class="code text"><a name="rest_code_2af0821f585248eab8cf79853bb882ce-1"></a>cp /etc/portage/package.use ~/package.use.backup
+<a name="rest_code_2af0821f585248eab8cf79853bb882ce-2"></a>mv /etc/portage/package.use /etc/portage/package.use.old
+<a name="rest_code_2af0821f585248eab8cf79853bb882ce-3"></a>mkdir -p /etc/portage/package.use
+<a name="rest_code_2af0821f585248eab8cf79853bb882ce-4"></a>mv /etc/portage/package.use.old /etc/portage/package.use/use_flags
 </pre>
 <p>Once that is complete, start going through <code class="docutils literal">/etc/portage/package.use/use_flags</code>
 and break them down into individual files. The format is the same as in the
@@ -258,9 +258,9 @@ in&nbsp;Gentoo.</p>
 flags to <em>all</em> packages. Should you want those flags only for certain packages,
 or want to use specific sets of flags for certain packages, the same syntax
 as in <code class="docutils literal">/etc/portage/package.use</code> applies.</p>
-<pre class="code text"><a name="rest_code_7bf0dbfd1fd047b79856f027a1483550-1"></a>$ cpuid2cpuflags
-<a name="rest_code_7bf0dbfd1fd047b79856f027a1483550-2"></a>CPU_FLAGS_X86: aes avx f16c mmx mmxext pclmul popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3
-<a name="rest_code_7bf0dbfd1fd047b79856f027a1483550-3"></a># echo "*/* $(cpuid2cpuflags)" &gt;&gt; /etc/portage/package.use/00-cpuflags
+<pre class="code text"><a name="rest_code_782638a2c624466fa9da87372c074c05-1"></a>$ cpuid2cpuflags
+<a name="rest_code_782638a2c624466fa9da87372c074c05-2"></a>CPU_FLAGS_X86: aes avx f16c mmx mmxext pclmul popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3
+<a name="rest_code_782638a2c624466fa9da87372c074c05-3"></a># echo "*/* $(cpuid2cpuflags)" &gt;&gt; /etc/portage/package.use/00-cpuflags
 </pre>
 </div>
 <div class="section" id="further-reading">
@@ -292,7 +292,7 @@ can present a significant bottleneck where the CPU is simply waiting on disk
 I/O. It is possible to use a temporary file system in the system RAM, <code class="docutils literal">tmpfs</code>,
 as the location where <cite>Portage</cite> will store build files. By doing so, you can
 eliminate some of that bottleneck as system RAM is many magnitudes faster than
-even the fastests hard drives. This has the potential to reduce disk I/O and
+even the fastest hard drives. This has the potential to reduce disk I/O and
 wear, and increase build speed at the cost of less available system RAM while
 the <code class="docutils literal">tmpfs</code> is&nbsp;mounted.</p>
 <p>However it also has more potential for things to break, as certain packages
@@ -350,11 +350,11 @@ how to determine a good value for your own&nbsp;system.</p>
 <dd>
 <p>Typically set to the number of <em>logical</em> CPU cores. This number will start up
 to that many jobs in parallel, within a single package. This is separate from
-the <code class="docutils literal"><span class="pre">--jobs</span></code> option below. This represents the maximum number of tasts to
+the <code class="docutils literal"><span class="pre">--jobs</span></code> option below. This represents the maximum number of tasks to
 start at once for a single&nbsp;job.</p>
 <p>The <code class="docutils literal">lscpu</code> command can be used to determine the number of logical cores, if
 you are unsure. In general this will be the number of physical cores you have,
-multiplied by the number of threads per core. If you have a quad-core sytem
+multiplied by the number of threads per core. If you have a quad-core system
 with SMT or Hyper-Threading, this might be <code class="docutils literal">4 cores * 2 threads/core = 8</code>.
 More information available on the <a class="reference external" href="https://wiki.gentoo.org/wiki/MAKEOPTS">MAKEOPTS</a> Gentoo Wiki&nbsp;page.</p>
 </dd>
@@ -365,7 +365,7 @@ point. The higher the number, the &#8220;nicer&#8221; a process will be in terms
 up CPU time for a less &#8220;nice&#8221; process. This will play a big impact into how
 responsive the system feels during a built. Setting this too low may cause
 the system to perform sluggishly, though builds may complete faster. A more
-in-depth explaination on &#8220;niceness&#8221; is available on <a class="reference external" href="https://en.wikipedia.org/wiki/Nice_%28Unix%29">Wikipedia</a>.</p>
+in-depth explanation on &#8220;niceness&#8221; is available on <a class="reference external" href="https://en.wikipedia.org/wiki/Nice_%28Unix%29">Wikipedia</a>.</p>
 </dd>
 <dt><code class="docutils literal">EMERGE_DEFAULT_OPTS = <span class="pre">"--jobs</span> 2 <span class="pre">--load-average</span> 3.6"</code></dt>
 <dd>
@@ -402,9 +402,9 @@ each other. <code class="docutils literal">K</code> being the number of separate
 being the number of tasks to create in <em>each</em>&nbsp;package.</p>
 <p>With those new settings entered, <cite>Portage</cite> should now be able to build multiple
 packages at once. It will not do so in all cases, as noted above, it was a
-noticable difference for me in CPU utilization and total time to install a
+noticeable difference for me in CPU utilization and total time to install a
 set of packages. In some cases, certain packages may not build when using these
-tweaks. I have not enounctered any of these cases yet. If you do encounter one,
+tweaks. I have not encountered any of these cases yet. If you do encounter one,
 try again with <code class="docutils literal"><span class="pre">MAKEOPTS="-j1"</span></code>, or with the <code class="docutils literal"><span class="pre">--jobs</span></code> argument reduced or&nbsp;removed.</p>
 </div>
 <div class="section" id="where-to-go-from-here">
@@ -453,7 +453,7 @@ different messages can you see in the scrolling&nbsp;text?</p>
                 <a href="../python3-out-with-the-old-in-with-the-new/" rel="prev" title="Python3: Out with the old, in with the new">Previous&nbsp;post</a>
             </li>
             <li class="next">
-                <a href="../finding-my-voice-writing-about-writing/" rel="next" title="Finding my voice: Writing about writing">Next&nbsp;post</a>
+                <a href="../finding-my-voice-writing-about-writing/" rel="next" title="Finding my voice -- writing about writing">Next&nbsp;post</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer" class="text-center">
             Contents © 2020 <a href="https://github.com/ncdulo">ncdulo</a> - Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a> <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">

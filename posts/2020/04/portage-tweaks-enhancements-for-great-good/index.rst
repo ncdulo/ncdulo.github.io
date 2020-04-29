@@ -1,7 +1,7 @@
 .. title: Portage tweaks & enhancements for great good
 .. slug: portage-tweaks-enhancements-for-great-good
 .. date: 2020-04-26 10:26:30 UTC-04:00
-.. updated: 2020-04-27 15:07:38 UTC-04:00
+.. updated: 2020-04-29 15:28:38 UTC-04:00
 .. tags: gentoo, linux, portage, tweak, enhancement
 .. category: gentoo
 .. link:
@@ -219,7 +219,7 @@ can present a significant bottleneck where the CPU is simply waiting on disk
 I/O. It is possible to use a temporary file system in the system RAM, ``tmpfs``,
 as the location where `Portage` will store build files. By doing so, you can
 eliminate some of that bottleneck as system RAM is many magnitudes faster than
-even the fastests hard drives. This has the potential to reduce disk I/O and
+even the fastest hard drives. This has the potential to reduce disk I/O and
 wear, and increase build speed at the cost of less available system RAM while
 the ``tmpfs`` is mounted.
 
@@ -283,12 +283,12 @@ how to determine a good value for your own system.
 ``MAKEOPTS = "-j4"``
   Typically set to the number of *logical* CPU cores. This number will start up
   to that many jobs in parallel, within a single package. This is separate from
-  the ``--jobs`` option below. This represents the maximum number of tasts to
+  the ``--jobs`` option below. This represents the maximum number of tasks to
   start at once for a single job.
 
   The ``lscpu`` command can be used to determine the number of logical cores, if
   you are unsure. In general this will be the number of physical cores you have,
-  multiplied by the number of threads per core. If you have a quad-core sytem
+  multiplied by the number of threads per core. If you have a quad-core system
   with SMT or Hyper-Threading, this might be ``4 cores * 2 threads/core = 8``.
   More information available on the `MAKEOPTS`_ Gentoo Wiki page.
 
@@ -298,7 +298,7 @@ how to determine a good value for your own system.
   up CPU time for a less "nice" process. This will play a big impact into how
   responsive the system feels during a built. Setting this too low may cause
   the system to perform sluggishly, though builds may complete faster. A more
-  in-depth explaination on "niceness" is available on `Wikipedia`_.
+  in-depth explanation on "niceness" is available on `Wikipedia`_.
 
 ``EMERGE_DEFAULT_OPTS = "--jobs 2 --load-average 3.6"``
   This variable can be used to pass in a set of default command line arguments
@@ -334,9 +334,9 @@ how to determine a good value for your own system.
 
 With those new settings entered, `Portage` should now be able to build multiple
 packages at once. It will not do so in all cases, as noted above, it was a
-noticable difference for me in CPU utilization and total time to install a
+noticeable difference for me in CPU utilization and total time to install a
 set of packages. In some cases, certain packages may not build when using these
-tweaks. I have not enounctered any of these cases yet. If you do encounter one,
+tweaks. I have not encountered any of these cases yet. If you do encounter one,
 try again with ``MAKEOPTS="-j1"``, or with the ``--jobs`` argument reduced or
 removed.
 

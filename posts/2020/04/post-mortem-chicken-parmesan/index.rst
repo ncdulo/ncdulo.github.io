@@ -1,6 +1,7 @@
 .. title: Post-mortem: Chicken Parmesan
 .. slug: post-mortem-chicken-parmesan
 .. date: 2020-04-28 22:23:54 UTC-04:00
+.. updated: 2020-04-29 15:30:24 UTC-04:00
 .. tags: cooking, diy, thoughts
 .. category: food
 .. link:
@@ -32,7 +33,7 @@ didn't injure myself or anything, I did make some absent-minded calls which
 *could* have had less than ideal results.
 
 The preparation was simple. A couple chicken breasts, coated in a breaded,
-parmesan cheese mixture with a bit of mozzarella mixed in. Stick that in the
+Parmesan cheese mixture with a bit of mozzarella mixed in. Stick that in the
 oven for about 20-25 minutes. Get some spaghetti going separately. Pop the
 marinara sauce in the microwave (mostly because I did not want to dirty
 a saucepan) a few minutes before the pasta finishes. Combine, and enjoy. Easy
@@ -74,7 +75,7 @@ to plate and get dishes into the sink. Had a brief moment when the chicken
 seemed glued to the baking sheet, but I did prevail. The final bits cooking the
 pasta and chicken took longer than anticipated, so I nuked the sauce for another
 20-30 seconds to make sure it was good and hot. Got everything plated nicely,
-little more parmesan on top -- *Bon Appétit!*
+little more Parmesan on top -- *Bon Appétit!*
 
 There's even enough left for another meal!
 ------------------------------------------

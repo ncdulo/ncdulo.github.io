@@ -1,6 +1,7 @@
 .. title: Preparation for deploy, final thoughts
 .. slug: preparation-for-deploy-final-thoughts
 .. date: 2020-04-21 18:10:08 UTC-04:00
+.. updated: 2020-04-29 15:33:08 UTC-04:00
 .. tags: meta, webdev, blog, project
 .. category: devncdulo
 .. link:
@@ -61,7 +62,7 @@ ways of going about things is going to take some time. But we've (finally!) got
 a workable base that we can build up on.
 
 One of the more challenging bits for me has been deciding upon a directory
-heirarchy to keep the content organized. A solid directory structure helps users
+hierarchy to keep the content organized. A solid directory structure helps users
 to navigate the site better. For me, human-readable URLS that make sense are
 important, so I made several tweaks into the configuration to facilitate that.
 This includes storing blog posts under the ``posts/<Year>/<Month>/`` directory
@@ -80,7 +81,7 @@ The moment of truth is nearly upon us! I wanted to write out this post, as well
 as leave myself some time to double, and triple check the output contents. There
 are several items that should not be published. Nothing too good. Just a few
 test posts that wouldn't otherwise make sense, images that are potentially
-licencsed, and the `Nikola` demo content installed by ``nikola init --demo``.
+licensed, and the `Nikola` demo content installed by ``nikola init --demo``.
 
 It's also now a good time to really think hard about how we version control this
 project and related pieces. Due to the licensed, and demo content that was
@@ -91,13 +92,13 @@ a solution I like better will be to keep things separate.
 
 Using a series of symlinks, I would like to use maintain separate repositories
 for the custom theme being created, the Nikola project base, and the content.
-I can forsee some areas that will need attention. Such as, do we commit
+I can foresee some areas that will need attention. Such as, do we commit
 ``pages/`` or ``output/``? How can we deploy to GitHub pages if the destination
 repo is *not* the one we are currently inside? Is that even possible? For now
 though, we've got something good to work off of. I have no problem to manually
 deploy our content to our `GitHub Pages`_ repo.
 
-For now, I'm just gonne keep at it, and have fun. I'll never have things 100%
+For now, I'm just gonna keep at it, and have fun. I'll never have things 100%
 right from the start. The best things take time, and this is no different.
 
 .. _Pelican: https://blog.getpelican.com/

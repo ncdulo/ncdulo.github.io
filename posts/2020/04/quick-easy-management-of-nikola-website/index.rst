@@ -1,7 +1,7 @@
 .. title: Quick & easy management of Nikola websites
 .. slug: quick-easy-management-of-nikola-website
 .. date: 2020-04-21 21:44:50 UTC-04:00
-.. updated: 2020-04-22 19:08:42 UTC-04:00
+.. updated: 2020-04-29 15:35:42 UTC-04:00
 .. tags: nikola, project, git, deploy
 .. category: devncdulo
 .. link:
@@ -40,7 +40,7 @@ the ``master`` branch, and a setting will be flipped so that `GitHub` knows
 to serve your content from there. The default method pushes onto a ``gh-pages``
 branch, which should *only* contain the files you intend to be served on your
 pages. I am opting for the ``docs/`` method for simplicity at the cost of
-slightly less straight-forward directory heirarchy.
+slightly less straight-forward directory hierarchy.
 
 Alright, how are we going to do this?
 -------------------------------------
