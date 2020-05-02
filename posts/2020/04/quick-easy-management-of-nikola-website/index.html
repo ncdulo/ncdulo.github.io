@@ -4,16 +4,19 @@
 <meta charset="utf-8">
 <meta name="description" content="Deploy Nikola code, and content with GitHub Pages.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quick <span class="amp">&amp;</span> easy management of Nikola websites | /dev/ncdulo</title>
-<link href="../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<title>Quick &amp; easy management of Nikola websites | /dev/ncdulo</title>
+<link href="../../../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/baguetteBox.min.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/bootblog.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#6c757d">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../../rss.xml">
 <link rel="canonical" href="https://ncdulo.github.io/posts/2020/04/quick-easy-management-of-nikola-website/">
 <link rel="icon" href="../../../../favicon.ico" sizes="16x16">
-<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><meta name="robots" contents="index,follow">
-<meta name="revisit-after" contents="7 days">
-<meta name="copyright" content="ncdulo 2020">
+<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><meta name="copyright" content="ncdulo 2020">
 <meta name="author" content="ncdulo">
 <link rel="prev" href="../preparation-for-deploy-final-thoughts/" title="Preparation for deploy, final thoughts" type="text/html">
 <link rel="next" href="../python3-out-with-the-old-in-with-the-new/" title="Python3: Out with the old, in with the new" type="text/html">
@@ -61,6 +64,9 @@
     </div>
 </header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
             <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item active">
+<a href="." class="nav-link">About <span class="sr-only">(active)</span></a>
+                </li>
 <li class="nav-item">
 <a href="../../../../archive.html" class="nav-link">Archive</a>
                 </li>
@@ -69,6 +75,12 @@
                 </li>
 <li class="nav-item">
 <a href="../../../../tags/" class="nav-link">Tags</a>
+                </li>
+<li class="nav-item active">
+<a href="." class="nav-link">People <span class="sr-only">(active)</span></a>
+                </li>
+<li class="nav-item active">
+<a href="." class="nav-link">Projects <span class="sr-only">(active)</span></a>
                 </li>
 <li class="nav-item">
 <a href="https://github.com/ncdulo" class="nav-link">GitHub</a>
@@ -89,7 +101,7 @@
         
         
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Quick <span class="amp">&amp;</span> easy management of Nikola&nbsp;websites</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Quick &amp; easy management of Nikola&nbsp;websites</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">&nbsp;ncdulo
@@ -224,7 +236,7 @@ This command effectively reads as copy the files <em>inside</em> of <code class=
 the <code class="docutils literal">ncdulo.github.io</code> directory located one level above our current working
 directory. And copy them recursively so that all sub-directories and files
 within are&nbsp;copied.</p>
-<pre class="code bash"><a name="rest_code_5ea95b0be908407990b69973fa1c3aec-1"></a>cp -r output/. ../ncdulo.github.io
+<pre class="code bash"><a name="rest_code_f19facc907844ea39544326c9079e1a6-1"></a>cp -r output/. ../ncdulo.github.io
 </pre>
 <p>Once the files are copied over, I suggest double-checking the directory
 structure. Make sure pages are where they should be in your new repo, and that
@@ -294,7 +306,7 @@ post, please inform me via <cite>GitHub</cite> <a class="reference external" hre
 <img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Intl License" style="border-width:0; margin-bottom:12px;" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a>
     
     
-</footer><script src="../../../../assets/js/all-nocdn.js"></script><script src="../../../../assets/js/moment-with-locales.min.js"></script><!-- fancy dates --><script>
+</footer><script src="../../../../assets/js/jquery.min.js"></script><script src="../../../../assets/js/popper.min.js"></script><script src="../../../../assets/js/bootstrap.min.js"></script><script src="../../../../assets/js/baguetteBox.min.js"></script><script src="../../../../assets/js/moment-with-locales.min.js"></script><script src="../../../../assets/js/fancydates.min.js"></script><!-- fancy dates --><script>
         moment.locale("en");
         fancydates(2, "YYYY-MM-DD HH:mm");
         </script><!-- end fancy dates --><script>

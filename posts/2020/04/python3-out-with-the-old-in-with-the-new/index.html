@@ -5,15 +5,18 @@
 <meta name="description" content="Updating the default Python 3.6 to 3.7 on Gentoo Linux">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Python3: Out with the old, in with the new | /dev/ncdulo</title>
-<link href="../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/baguetteBox.min.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/bootblog.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#6c757d">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../../rss.xml">
 <link rel="canonical" href="https://ncdulo.github.io/posts/2020/04/python3-out-with-the-old-in-with-the-new/">
 <link rel="icon" href="../../../../favicon.ico" sizes="16x16">
-<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><meta name="robots" contents="index,follow">
-<meta name="revisit-after" contents="7 days">
-<meta name="copyright" content="ncdulo 2020">
+<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><meta name="copyright" content="ncdulo 2020">
 <meta name="author" content="ncdulo">
 <link rel="prev" href="../quick-easy-management-of-nikola-website/" title="Quick &amp; easy management of Nikola websites" type="text/html">
 <link rel="next" href="../portage-tweaks-enhancements-for-great-good/" title="Portage tweaks &amp; enhancements for great good" type="text/html">
@@ -62,6 +65,9 @@
     </div>
 </header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
             <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item active">
+<a href="." class="nav-link">About <span class="sr-only">(active)</span></a>
+                </li>
 <li class="nav-item">
 <a href="../../../../archive.html" class="nav-link">Archive</a>
                 </li>
@@ -70,6 +76,12 @@
                 </li>
 <li class="nav-item">
 <a href="../../../../tags/" class="nav-link">Tags</a>
+                </li>
+<li class="nav-item active">
+<a href="." class="nav-link">People <span class="sr-only">(active)</span></a>
+                </li>
+<li class="nav-item active">
+<a href="." class="nav-link">Projects <span class="sr-only">(active)</span></a>
                 </li>
 <li class="nav-item">
 <a href="https://github.com/ncdulo" class="nav-link">GitHub</a>
@@ -149,7 +161,7 @@ somewhat depend on the packages installed to your system which utilize <cite>Pyt
 that version, you may wish to apply the update in parts, described below.
 Alternatively, if those programs can be stopped during the update, it may help
 ensure no errors occur. The news post linked <a class="reference external" href="https://www.gentoo.org/support/news-items/2020-04-22-python3-7.html">here</a> does mention that already
-loaded <span class="amp">&amp;</span> running programs should not encounter errors during this update.
+loaded &amp; running programs should not encounter errors during this update.
 However, if they are restarted or load additional modules during this process,
 there may be errors. If you <em>do</em> keep them running during the update, you will
 need to restart them after it has completed so they can load up again using the
@@ -180,18 +192,18 @@ happen, you will want to clean up any stray packages with commands such&nbsp;as:
 from your system. <strong>Always</strong> check the list of packages to remove before
 proceeding. If you are uncertain and cannot determine on your own, ask or
 skip over it, leaving the package in question&nbsp;installed.</p>
-<pre class="code sh"><a name="rest_code_c3a0f3a88f6c47ac9b3578fa0a559162-1"></a>emerge --depclean --ask
-<a name="rest_code_c3a0f3a88f6c47ac9b3578fa0a559162-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_c3a0f3a88f6c47ac9b3578fa0a559162-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_3b878b2c39bb42b8a9c96f61f3735e4d-1"></a>emerge --depclean --ask
+<a name="rest_code_3b878b2c39bb42b8a9c96f61f3735e4d-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_3b878b2c39bb42b8a9c96f61f3735e4d-3"></a>emerge --depclean --ask
 </pre>
 <p>Now may be a good time to update your default Python version as&nbsp;well</p>
-<pre class="code text"><a name="rest_code_2a672e21a01a49239fb0b918c2b44527-1"></a>$ eselect python list
-<a name="rest_code_2a672e21a01a49239fb0b918c2b44527-2"></a>  Available Python interpreters, in order of preference:
-<a name="rest_code_2a672e21a01a49239fb0b918c2b44527-3"></a>    [1]   python3.6
-<a name="rest_code_2a672e21a01a49239fb0b918c2b44527-4"></a>    [2]   python3.8 (fallback)
-<a name="rest_code_2a672e21a01a49239fb0b918c2b44527-5"></a>    [3]   python3.7 (fallback)
-<a name="rest_code_2a672e21a01a49239fb0b918c2b44527-6"></a>    [4]   python2.7 (fallback)
-<a name="rest_code_2a672e21a01a49239fb0b918c2b44527-7"></a>$ sudo eselect python set 3
+<pre class="code text"><a name="rest_code_0a086acafc9043398eff2d7da1d530f3-1"></a>$ eselect python list
+<a name="rest_code_0a086acafc9043398eff2d7da1d530f3-2"></a>  Available Python interpreters, in order of preference:
+<a name="rest_code_0a086acafc9043398eff2d7da1d530f3-3"></a>    [1]   python3.6
+<a name="rest_code_0a086acafc9043398eff2d7da1d530f3-4"></a>    [2]   python3.8 (fallback)
+<a name="rest_code_0a086acafc9043398eff2d7da1d530f3-5"></a>    [3]   python3.7 (fallback)
+<a name="rest_code_0a086acafc9043398eff2d7da1d530f3-6"></a>    [4]   python2.7 (fallback)
+<a name="rest_code_0a086acafc9043398eff2d7da1d530f3-7"></a>$ sudo eselect python set 3
 </pre>
 <p>This series of commands will check <cite>Portage</cite> for any packages which are no
 longer required, based on the dependency tree. Then update any packages which
@@ -221,9 +233,9 @@ where applicable, without removing any <cite>Python 3.6</cite> support&nbsp;yet.
 from your system. <strong>Always</strong> check the list of packages to remove before
 proceeding. If you are uncertain and cannot determine on your own, ask or
 skip over it, leaving the package in question&nbsp;installed.</p>
-<pre class="code sh"><a name="rest_code_7be88519aec44df094d4c929c8186bc0-1"></a>emerge --depclean --ask
-<a name="rest_code_7be88519aec44df094d4c929c8186bc0-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_7be88519aec44df094d4c929c8186bc0-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_d2d9f13fd0414984907aa30d98938b8a-1"></a>emerge --depclean --ask
+<a name="rest_code_d2d9f13fd0414984907aa30d98938b8a-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_d2d9f13fd0414984907aa30d98938b8a-3"></a>emerge --depclean --ask
 </pre>
 <p>Take the time now to restart any running scripts, daemons, or programs that were
 included in that update list. Then either comment out, or delete the two lines
@@ -244,9 +256,9 @@ is working to push out the updates in time. For those reasons, not every package
 will rebuild into <cite>Python 3.7</cite> support right away. As mentioned in the beginning
 of this section, <strong>pay attention to the `depclean` command &#8212; it can remove
 important system&nbsp;packages!</strong></p>
-<pre class="code sh"><a name="rest_code_d8aa481d6e4b48c08855074d725b83d7-1"></a>emerge --depclean --ask
-<a name="rest_code_d8aa481d6e4b48c08855074d725b83d7-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_d8aa481d6e4b48c08855074d725b83d7-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_b382d2dbb3c041b8877a423093868211-1"></a>emerge --depclean --ask
+<a name="rest_code_b382d2dbb3c041b8877a423093868211-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_b382d2dbb3c041b8877a423093868211-3"></a>emerge --depclean --ask
 </pre>
 <p>Finally! This all complete, you should be finished up now. Your Gentoo system
 should now be using <cite>Python 3.7</cite> as the default version. Packages should have
@@ -331,7 +343,7 @@ me as I want to know exactly what changed throughout the&nbsp;repos.</p>
 <img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Intl License" style="border-width:0; margin-bottom:12px;" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a>
     
     
-</footer><script src="../../../../assets/js/all-nocdn.js"></script><script src="../../../../assets/js/moment-with-locales.min.js"></script><!-- fancy dates --><script>
+</footer><script src="../../../../assets/js/jquery.min.js"></script><script src="../../../../assets/js/popper.min.js"></script><script src="../../../../assets/js/bootstrap.min.js"></script><script src="../../../../assets/js/baguetteBox.min.js"></script><script src="../../../../assets/js/moment-with-locales.min.js"></script><script src="../../../../assets/js/fancydates.min.js"></script><!-- fancy dates --><script>
         moment.locale("en");
         fancydates(2, "YYYY-MM-DD HH:mm");
         </script><!-- end fancy dates --><script>

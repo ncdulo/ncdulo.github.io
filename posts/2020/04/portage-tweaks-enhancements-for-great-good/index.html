@@ -4,16 +4,19 @@
 <meta charset="utf-8">
 <meta name="description" content="Tweak Gentoo Portage for parallel builds, more threads and nicer output. Find out how to enhance your Portage experience.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portage tweaks <span class="amp">&amp;</span> enhancements for great good | /dev/ncdulo</title>
-<link href="../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<title>Portage tweaks &amp; enhancements for great good | /dev/ncdulo</title>
+<link href="../../../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/baguetteBox.min.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/bootblog.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#6c757d">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../../rss.xml">
 <link rel="canonical" href="https://ncdulo.github.io/posts/2020/04/portage-tweaks-enhancements-for-great-good/">
 <link rel="icon" href="../../../../favicon.ico" sizes="16x16">
-<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><meta name="robots" contents="index,follow">
-<meta name="revisit-after" contents="7 days">
-<meta name="copyright" content="ncdulo 2020">
+<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><meta name="copyright" content="ncdulo 2020">
 <meta name="author" content="ncdulo">
 <link rel="prev" href="../python3-out-with-the-old-in-with-the-new/" title="Python3: Out with the old, in with the new" type="text/html">
 <link rel="next" href="../finding-my-voice-writing-about-writing/" title="Finding my voice -- writing about writing" type="text/html">
@@ -62,6 +65,9 @@
     </div>
 </header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
             <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item active">
+<a href="." class="nav-link">About <span class="sr-only">(active)</span></a>
+                </li>
 <li class="nav-item">
 <a href="../../../../archive.html" class="nav-link">Archive</a>
                 </li>
@@ -70,6 +76,12 @@
                 </li>
 <li class="nav-item">
 <a href="../../../../tags/" class="nav-link">Tags</a>
+                </li>
+<li class="nav-item active">
+<a href="." class="nav-link">People <span class="sr-only">(active)</span></a>
+                </li>
+<li class="nav-item active">
+<a href="." class="nav-link">Projects <span class="sr-only">(active)</span></a>
                 </li>
 <li class="nav-item">
 <a href="https://github.com/ncdulo" class="nav-link">GitHub</a>
@@ -90,7 +102,7 @@
         
         
         
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Portage tweaks <span class="amp">&amp;</span> enhancements for great&nbsp;good</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Portage tweaks &amp; enhancements for great&nbsp;good</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">&nbsp;ncdulo
@@ -180,10 +192,10 @@ a directory. The steps will be the same for other files within <code class="docu
 in front of them. Safe practices include making backups of the original files
 before moving them around, or changing them. Feel free to remove any of these
 <code class="docutils literal">*.backup</code> files after verifying everything was&nbsp;sucessful.</p>
-<pre class="code text"><a name="rest_code_83fdac69453c4577b0e6b64ef2d1ccb1-1"></a>cp /etc/portage/package.use ~/package.use.backup
-<a name="rest_code_83fdac69453c4577b0e6b64ef2d1ccb1-2"></a>mv /etc/portage/package.use /etc/portage/package.use.old
-<a name="rest_code_83fdac69453c4577b0e6b64ef2d1ccb1-3"></a>mkdir -p /etc/portage/package.use
-<a name="rest_code_83fdac69453c4577b0e6b64ef2d1ccb1-4"></a>mv /etc/portage/package.use.old /etc/portage/package.use/use_flags
+<pre class="code text"><a name="rest_code_110d70194b8e42b6a9fb3de708c90b1e-1"></a>cp /etc/portage/package.use ~/package.use.backup
+<a name="rest_code_110d70194b8e42b6a9fb3de708c90b1e-2"></a>mv /etc/portage/package.use /etc/portage/package.use.old
+<a name="rest_code_110d70194b8e42b6a9fb3de708c90b1e-3"></a>mkdir -p /etc/portage/package.use
+<a name="rest_code_110d70194b8e42b6a9fb3de708c90b1e-4"></a>mv /etc/portage/package.use.old /etc/portage/package.use/use_flags
 </pre>
 <p>Once that is complete, start going through <code class="docutils literal">/etc/portage/package.use/use_flags</code>
 and break them down into individual files. The format is the same as in the
@@ -266,9 +278,9 @@ in&nbsp;Gentoo.</p>
 flags to <em>all</em> packages. Should you want those flags only for certain packages,
 or want to use specific sets of flags for certain packages, the same syntax
 as in <code class="docutils literal">/etc/portage/package.use</code> applies.</p>
-<pre class="code text"><a name="rest_code_cf32710df2474130a038ce8473a99b59-1"></a>$ cpuid2cpuflags
-<a name="rest_code_cf32710df2474130a038ce8473a99b59-2"></a>CPU_FLAGS_X86: aes avx f16c mmx mmxext pclmul popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3
-<a name="rest_code_cf32710df2474130a038ce8473a99b59-3"></a># echo "*/* $(cpuid2cpuflags)" &gt;&gt; /etc/portage/package.use/00-cpuflags
+<pre class="code text"><a name="rest_code_98f47b961d594c238f45e3149bc74bdb-1"></a>$ cpuid2cpuflags
+<a name="rest_code_98f47b961d594c238f45e3149bc74bdb-2"></a>CPU_FLAGS_X86: aes avx f16c mmx mmxext pclmul popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3
+<a name="rest_code_98f47b961d594c238f45e3149bc74bdb-3"></a># echo "*/* $(cpuid2cpuflags)" &gt;&gt; /etc/portage/package.use/00-cpuflags
 </pre>
 </div>
 <div class="section" id="further-reading">
@@ -487,7 +499,7 @@ different messages can you see in the scrolling&nbsp;text?</p>
 <img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Intl License" style="border-width:0; margin-bottom:12px;" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a>
     
     
-</footer><script src="../../../../assets/js/all-nocdn.js"></script><script src="../../../../assets/js/moment-with-locales.min.js"></script><!-- fancy dates --><script>
+</footer><script src="../../../../assets/js/jquery.min.js"></script><script src="../../../../assets/js/popper.min.js"></script><script src="../../../../assets/js/bootstrap.min.js"></script><script src="../../../../assets/js/baguetteBox.min.js"></script><script src="../../../../assets/js/moment-with-locales.min.js"></script><script src="../../../../assets/js/fancydates.min.js"></script><!-- fancy dates --><script>
         moment.locale("en");
         fancydates(2, "YYYY-MM-DD HH:mm");
         </script><!-- end fancy dates --><script>
