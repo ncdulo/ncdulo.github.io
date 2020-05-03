@@ -192,18 +192,18 @@ happen, you will want to clean up any stray packages with commands such&nbsp;as:
 from your system. <strong>Always</strong> check the list of packages to remove before
 proceeding. If you are uncertain and cannot determine on your own, ask or
 skip over it, leaving the package in question&nbsp;installed.</p>
-<pre class="code sh"><a name="rest_code_078e8bb7b39147a39712a0191b12df7e-1"></a>emerge --depclean --ask
-<a name="rest_code_078e8bb7b39147a39712a0191b12df7e-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_078e8bb7b39147a39712a0191b12df7e-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_befbaf519c774e179deff623240d756a-1"></a>emerge --depclean --ask
+<a name="rest_code_befbaf519c774e179deff623240d756a-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_befbaf519c774e179deff623240d756a-3"></a>emerge --depclean --ask
 </pre>
 <p>Now may be a good time to update your default Python version as&nbsp;well</p>
-<pre class="code text"><a name="rest_code_40c4be4318a745a6aaea915d61a422d4-1"></a>$ eselect python list
-<a name="rest_code_40c4be4318a745a6aaea915d61a422d4-2"></a>  Available Python interpreters, in order of preference:
-<a name="rest_code_40c4be4318a745a6aaea915d61a422d4-3"></a>    [1]   python3.6
-<a name="rest_code_40c4be4318a745a6aaea915d61a422d4-4"></a>    [2]   python3.8 (fallback)
-<a name="rest_code_40c4be4318a745a6aaea915d61a422d4-5"></a>    [3]   python3.7 (fallback)
-<a name="rest_code_40c4be4318a745a6aaea915d61a422d4-6"></a>    [4]   python2.7 (fallback)
-<a name="rest_code_40c4be4318a745a6aaea915d61a422d4-7"></a>$ sudo eselect python set 3
+<pre class="code text"><a name="rest_code_737e0f710abe488fb34bc2c4def867fe-1"></a>$ eselect python list
+<a name="rest_code_737e0f710abe488fb34bc2c4def867fe-2"></a>  Available Python interpreters, in order of preference:
+<a name="rest_code_737e0f710abe488fb34bc2c4def867fe-3"></a>    [1]   python3.6
+<a name="rest_code_737e0f710abe488fb34bc2c4def867fe-4"></a>    [2]   python3.8 (fallback)
+<a name="rest_code_737e0f710abe488fb34bc2c4def867fe-5"></a>    [3]   python3.7 (fallback)
+<a name="rest_code_737e0f710abe488fb34bc2c4def867fe-6"></a>    [4]   python2.7 (fallback)
+<a name="rest_code_737e0f710abe488fb34bc2c4def867fe-7"></a>$ sudo eselect python set 3
 </pre>
 <p>This series of commands will check <cite>Portage</cite> for any packages which are no
 longer required, based on the dependency tree. Then update any packages which
@@ -233,9 +233,9 @@ where applicable, without removing any <cite>Python 3.6</cite> support&nbsp;yet.
 from your system. <strong>Always</strong> check the list of packages to remove before
 proceeding. If you are uncertain and cannot determine on your own, ask or
 skip over it, leaving the package in question&nbsp;installed.</p>
-<pre class="code sh"><a name="rest_code_2d74c0d422bc41d781d5b58fc5658a18-1"></a>emerge --depclean --ask
-<a name="rest_code_2d74c0d422bc41d781d5b58fc5658a18-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_2d74c0d422bc41d781d5b58fc5658a18-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_c2026c6543d4466eb5d76519f8849a77-1"></a>emerge --depclean --ask
+<a name="rest_code_c2026c6543d4466eb5d76519f8849a77-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_c2026c6543d4466eb5d76519f8849a77-3"></a>emerge --depclean --ask
 </pre>
 <p>Take the time now to restart any running scripts, daemons, or programs that were
 included in that update list. Then either comment out, or delete the two lines
@@ -256,9 +256,9 @@ is working to push out the updates in time. For those reasons, not every package
 will rebuild into <cite>Python 3.7</cite> support right away. As mentioned in the beginning
 of this section, <strong>pay attention to the `depclean` command &#8212; it can remove
 important system&nbsp;packages!</strong></p>
-<pre class="code sh"><a name="rest_code_7d19a2a8cbe140bb8c10f94b3b7b8736-1"></a>emerge --depclean --ask
-<a name="rest_code_7d19a2a8cbe140bb8c10f94b3b7b8736-2"></a>emerge -1vUD --ask @world
-<a name="rest_code_7d19a2a8cbe140bb8c10f94b3b7b8736-3"></a>emerge --depclean --ask
+<pre class="code sh"><a name="rest_code_6c906dd8068248188590b57e7becffde-1"></a>emerge --depclean --ask
+<a name="rest_code_6c906dd8068248188590b57e7becffde-2"></a>emerge -1vUD --ask @world
+<a name="rest_code_6c906dd8068248188590b57e7becffde-3"></a>emerge --depclean --ask
 </pre>
 <p>Finally! This all complete, you should be finished up now. Your Gentoo system
 should now be using <cite>Python 3.7</cite> as the default version. Packages should have
@@ -343,10 +343,7 @@ me as I want to know exactly what changed throughout the&nbsp;repos.</p>
 <img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Intl License" style="border-width:0; margin-bottom:12px;" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a>
     
     
-</footer><script src="../../../../assets/js/jquery.min.js"></script><script src="../../../../assets/js/popper.min.js"></script><script src="../../../../assets/js/bootstrap.min.js"></script><script src="../../../../assets/js/baguetteBox.min.js"></script><script src="../../../../assets/js/moment-with-locales.min.js"></script><script src="../../../../assets/js/fancydates.min.js"></script><!-- fancy dates --><script>
-        moment.locale("en");
-        fancydates(2, "YYYY-MM-DD HH:mm");
-        </script><!-- end fancy dates --><script>
+</footer><script src="../../../../assets/js/jquery.min.js"></script><script src="../../../../assets/js/popper.min.js"></script><script src="../../../../assets/js/bootstrap.min.js"></script><script src="../../../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element) {

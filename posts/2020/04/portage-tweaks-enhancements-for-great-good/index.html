@@ -192,10 +192,10 @@ a directory. The steps will be the same for other files within <code class="docu
 in front of them. Safe practices include making backups of the original files
 before moving them around, or changing them. Feel free to remove any of these
 <code class="docutils literal">*.backup</code> files after verifying everything was&nbsp;sucessful.</p>
-<pre class="code text"><a name="rest_code_2ec1cd6483c64ee695565a11d1dac638-1"></a>cp /etc/portage/package.use ~/package.use.backup
-<a name="rest_code_2ec1cd6483c64ee695565a11d1dac638-2"></a>mv /etc/portage/package.use /etc/portage/package.use.old
-<a name="rest_code_2ec1cd6483c64ee695565a11d1dac638-3"></a>mkdir -p /etc/portage/package.use
-<a name="rest_code_2ec1cd6483c64ee695565a11d1dac638-4"></a>mv /etc/portage/package.use.old /etc/portage/package.use/use_flags
+<pre class="code text"><a name="rest_code_7ce973d052064da3afa7e5e0a17c7ea3-1"></a>cp /etc/portage/package.use ~/package.use.backup
+<a name="rest_code_7ce973d052064da3afa7e5e0a17c7ea3-2"></a>mv /etc/portage/package.use /etc/portage/package.use.old
+<a name="rest_code_7ce973d052064da3afa7e5e0a17c7ea3-3"></a>mkdir -p /etc/portage/package.use
+<a name="rest_code_7ce973d052064da3afa7e5e0a17c7ea3-4"></a>mv /etc/portage/package.use.old /etc/portage/package.use/use_flags
 </pre>
 <p>Once that is complete, start going through <code class="docutils literal">/etc/portage/package.use/use_flags</code>
 and break them down into individual files. The format is the same as in the
@@ -278,9 +278,9 @@ in&nbsp;Gentoo.</p>
 flags to <em>all</em> packages. Should you want those flags only for certain packages,
 or want to use specific sets of flags for certain packages, the same syntax
 as in <code class="docutils literal">/etc/portage/package.use</code> applies.</p>
-<pre class="code text"><a name="rest_code_55e40703680b4dac868a2949639952e3-1"></a>$ cpuid2cpuflags
-<a name="rest_code_55e40703680b4dac868a2949639952e3-2"></a>CPU_FLAGS_X86: aes avx f16c mmx mmxext pclmul popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3
-<a name="rest_code_55e40703680b4dac868a2949639952e3-3"></a># echo "*/* $(cpuid2cpuflags)" &gt;&gt; /etc/portage/package.use/00-cpuflags
+<pre class="code text"><a name="rest_code_83164706118a4457a8789d4880d1d57d-1"></a>$ cpuid2cpuflags
+<a name="rest_code_83164706118a4457a8789d4880d1d57d-2"></a>CPU_FLAGS_X86: aes avx f16c mmx mmxext pclmul popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3
+<a name="rest_code_83164706118a4457a8789d4880d1d57d-3"></a># echo "*/* $(cpuid2cpuflags)" &gt;&gt; /etc/portage/package.use/00-cpuflags
 </pre>
 </div>
 <div class="section" id="further-reading">
@@ -499,10 +499,7 @@ different messages can you see in the scrolling&nbsp;text?</p>
 <img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Intl License" style="border-width:0; margin-bottom:12px;" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a>
     
     
-</footer><script src="../../../../assets/js/jquery.min.js"></script><script src="../../../../assets/js/popper.min.js"></script><script src="../../../../assets/js/bootstrap.min.js"></script><script src="../../../../assets/js/baguetteBox.min.js"></script><script src="../../../../assets/js/moment-with-locales.min.js"></script><script src="../../../../assets/js/fancydates.min.js"></script><!-- fancy dates --><script>
-        moment.locale("en");
-        fancydates(2, "YYYY-MM-DD HH:mm");
-        </script><!-- end fancy dates --><script>
+</footer><script src="../../../../assets/js/jquery.min.js"></script><script src="../../../../assets/js/popper.min.js"></script><script src="../../../../assets/js/bootstrap.min.js"></script><script src="../../../../assets/js/baguetteBox.min.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element) {
