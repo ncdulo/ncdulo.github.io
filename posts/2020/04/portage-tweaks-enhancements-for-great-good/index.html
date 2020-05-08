@@ -110,7 +110,7 @@
             <p class="dateline">
             <a href="." rel="bookmark">
             <time class="published dt-published" datetime="2020-04-26T10:26:30-04:00" itemprop="datePublished" title="2020-04-26 10:26">2020-04-26 10:26</time><span class="updated"> (updated
-                    <time class="updated dt-updated" datetime="2020-04-29T15:28:38-04:00" itemprop="dateUpdated" title="2020-04-29 15:28">2020-04-29 15:28</time>)</span>
+                    <time class="updated dt-updated" datetime="2020-05-08T18:18:38-04:00" itemprop="dateUpdated" title="2020-05-08 18:18">2020-05-08 18:18</time>)</span>
             </a>
             </p>
             
@@ -192,10 +192,10 @@ a directory. The steps will be the same for other files within <code class="docu
 in front of them. Safe practices include making backups of the original files
 before moving them around, or changing them. Feel free to remove any of these
 <code class="docutils literal">*.backup</code> files after verifying everything was&nbsp;sucessful.</p>
-<pre class="code text"><a name="rest_code_7ce973d052064da3afa7e5e0a17c7ea3-1"></a>cp /etc/portage/package.use ~/package.use.backup
-<a name="rest_code_7ce973d052064da3afa7e5e0a17c7ea3-2"></a>mv /etc/portage/package.use /etc/portage/package.use.old
-<a name="rest_code_7ce973d052064da3afa7e5e0a17c7ea3-3"></a>mkdir -p /etc/portage/package.use
-<a name="rest_code_7ce973d052064da3afa7e5e0a17c7ea3-4"></a>mv /etc/portage/package.use.old /etc/portage/package.use/use_flags
+<pre class="code text"><a name="rest_code_efcd7c2c587843d3b2c4c8d8b10a9cf9-1"></a>cp /etc/portage/package.use ~/package.use.backup
+<a name="rest_code_efcd7c2c587843d3b2c4c8d8b10a9cf9-2"></a>mv /etc/portage/package.use /etc/portage/package.use.old
+<a name="rest_code_efcd7c2c587843d3b2c4c8d8b10a9cf9-3"></a>mkdir -p /etc/portage/package.use
+<a name="rest_code_efcd7c2c587843d3b2c4c8d8b10a9cf9-4"></a>mv /etc/portage/package.use.old /etc/portage/package.use/use_flags
 </pre>
 <p>Once that is complete, start going through <code class="docutils literal">/etc/portage/package.use/use_flags</code>
 and break them down into individual files. The format is the same as in the
@@ -278,9 +278,9 @@ in&nbsp;Gentoo.</p>
 flags to <em>all</em> packages. Should you want those flags only for certain packages,
 or want to use specific sets of flags for certain packages, the same syntax
 as in <code class="docutils literal">/etc/portage/package.use</code> applies.</p>
-<pre class="code text"><a name="rest_code_83164706118a4457a8789d4880d1d57d-1"></a>$ cpuid2cpuflags
-<a name="rest_code_83164706118a4457a8789d4880d1d57d-2"></a>CPU_FLAGS_X86: aes avx f16c mmx mmxext pclmul popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3
-<a name="rest_code_83164706118a4457a8789d4880d1d57d-3"></a># echo "*/* $(cpuid2cpuflags)" &gt;&gt; /etc/portage/package.use/00-cpuflags
+<pre class="code text"><a name="rest_code_2537e2b2661a415cae493427052dfdd4-1"></a>$ cpuid2cpuflags
+<a name="rest_code_2537e2b2661a415cae493427052dfdd4-2"></a>CPU_FLAGS_X86: aes avx f16c mmx mmxext pclmul popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3
+<a name="rest_code_2537e2b2661a415cae493427052dfdd4-3"></a># echo "*/* $(cpuid2cpuflags)" &gt;&gt; /etc/portage/package.use/00-cpuflags
 </pre>
 </div>
 <div class="section" id="further-reading">
@@ -322,6 +322,13 @@ As such, unless the system has a large amount of RAM, this may not be feasible
 or worth the trouble. The more memory you allocate in the <code class="docutils literal">tmpfs</code>, the less
 system RAM is available for other purposes. This may increase your risk of
 encountering an out-of-memory condition, which is not a fun time, trust&nbsp;me.</p>
+<p class="alert alert-info">Do note that the actual <code class="docutils literal">tmpfs</code> does not use memory (possibly a tiny bit to
+set up an empty filesystem) until files are added into it. For example, if you
+were to allocate 8GB for the <code class="docutils literal">tmpfs</code>, and have 16GB of RAM, you will still
+have 16GB available RAM until there are files inside the <code class="docutils literal">tmpfs</code>. Once the
+files go in, RAM is used. Think of a <code class="docutils literal">tmpfs</code> as a sort of dynamically sized
+partition, which expands as it is used, up to the size specified in your
+<code class="docutils literal">/etc/fstab</code> file. More on that in the link&nbsp;below.</p>
 <p>It is relatively simple to set this up, so long as you pay attention, and I
 found it did show benefits in my case. Due to the more advanced setup, and
 other considerations to be made when doing so, I am not going to detail the

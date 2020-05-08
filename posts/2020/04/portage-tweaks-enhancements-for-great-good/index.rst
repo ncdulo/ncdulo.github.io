@@ -1,7 +1,7 @@
 .. title: Portage tweaks & enhancements for great good
 .. slug: portage-tweaks-enhancements-for-great-good
 .. date: 2020-04-26 10:26:30 UTC-04:00
-.. updated: 2020-04-29 15:28:38 UTC-04:00
+.. updated: 2020-05-08 18:18:38 UTC-04:00
 .. tags: gentoo, linux, portage, tweak, enhancement
 .. category: gentoo
 .. link:
@@ -230,6 +230,16 @@ As such, unless the system has a large amount of RAM, this may not be feasible
 or worth the trouble. The more memory you allocate in the ``tmpfs``, the less
 system RAM is available for other purposes. This may increase your risk of
 encountering an out-of-memory condition, which is not a fun time, trust me.
+
+.. class:: alert alert-info
+
+  Do note that the actual ``tmpfs`` does not use memory (possibly a tiny bit to
+  set up an empty filesystem) until files are added into it. For example, if you
+  were to allocate 8GB for the ``tmpfs``, and have 16GB of RAM, you will still
+  have 16GB available RAM until there are files inside the ``tmpfs``. Once the
+  files go in, RAM is used. Think of a ``tmpfs`` as a sort of dynamically sized
+  partition, which expands as it is used, up to the size specified in your
+  ``/etc/fstab`` file. More on that in the link below.
 
 It is relatively simple to set this up, so long as you pay attention, and I
 found it did show benefits in my case. Due to the more advanced setup, and

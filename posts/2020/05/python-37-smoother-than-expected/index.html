@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Gentoo Python now defaults to version 3.7. The switch went much more smoothly than originally anticipated. Thanks goes out to the Gentoo maintainers, and developers.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Python 3.7: Smoother than expected | /dev/ncdulo</title>
+<link href="../../../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/baguetteBox.min.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/bootblog.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#6c757d">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../../rss.xml">
+<link rel="canonical" href="https://ncdulo.github.io/posts/2020/05/python-37-smoother-than-expected/">
+<link rel="icon" href="../../../../favicon.ico" sizes="16x16">
+<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><meta name="copyright" content="ncdulo 2020">
+<meta name="author" content="ncdulo">
+<link rel="prev" href="../../04/something-new-is-brewing/" title="Something new is brewing!" type="text/html">
+<meta property="og:site_name" content="/dev/ncdulo">
+<meta property="og:title" content="Python 3.7: Smoother than expected">
+<meta property="og:url" content="https://ncdulo.github.io/posts/2020/05/python-37-smoother-than-expected/">
+<meta property="og:description" content="Gentoo Python now defaults to version 3.7. The switch went much more smoothly than originally anticipated. Thanks goes out to the Gentoo maintainers, and developers.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-05-08T17:33:47-04:00">
+<meta property="article:tag" content="gentoo">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="portage">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="python3">
+<meta property="article:tag" content="thoughts">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://ncdulo.github.io/">
+
+            <span id="blog-title">/dev/ncdulo</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav">
+<li class="nav-item">
+    <a href="index.rst" id="sourcelink" class="nav-link">Source</a>
+    </li>
+
+
+                    
+            </ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item active">
+<a href="." class="nav-link">About <span class="sr-only">(active)</span></a>
+                </li>
+<li class="nav-item">
+<a href="../../../../archive.html" class="nav-link">Archive</a>
+                </li>
+<li class="nav-item">
+<a href="../../../../categories/" class="nav-link">Categories</a>
+                </li>
+<li class="nav-item">
+<a href="../../../../tags/" class="nav-link">Tags</a>
+                </li>
+<li class="nav-item">
+<a href="../../../../pages/people/" class="nav-link">People</a>
+                </li>
+<li class="nav-item active">
+<a href="." class="nav-link">Projects <span class="sr-only">(active)</span></a>
+                </li>
+<li class="nav-item">
+<a href="https://github.com/ncdulo" class="nav-link">GitHub</a>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+            <div class="row">
+<div class="col-md-8 blog-main">
+        <!--Body content-->
+        
+        
+        
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Python 3.7: Smoother than&nbsp;expected</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">&nbsp;ncdulo
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2020-05-08T17:33:47-04:00" itemprop="datePublished" title="2020-05-08 17:33">2020-05-08 17:33</time></a>
+            </p>
+            
+        <p class="sourceline"><a href="index.rst" class="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>As I wrote in <a class="reference external" href="../../04/python3-out-with-the-old-in-with-the-new/">another post</a> a few weeks ago, <cite>Gentoo</cite> has officially made
+the switch. The new default <cite>Python</cite> version is <cite>Python 3.7</cite>! I&#8217;m was not
+totally sure just <em>what</em> to expect with this update. Surely some things would
+go wrong, and I would encounter some issues somewhere. As it turns out, I was&nbsp;wrong.</p>
+<!-- TEASER_END -->
+<p>All week, even the week before, I have been anticipating with excitement the new
+default target to switch. I could have made the switch early without too much
+difficulty, I believe. I wanted to wait it out and get the full experience here.
+Part of that reasoning is because I knew I had some packages which have not
+been updated to <cite>Python 3.7</cite> yet. Mostly though, I wanted to see how <cite>Portage</cite>
+would handle this on it&#8217;s own with minimal intervention. And so I&nbsp;waited.</p>
+<p>Early in the week, around Monday or Tuesday, <code class="docutils literal">readline</code> also received a major
+version bump. Due to how many packages rely on <code class="docutils literal">readline</code>, the system library
+status of the package, I was in for quite a few rebuilds. While not a problem
+on it&#8217;s own, I noticed quite a few <cite>Python</cite> packages which would be rebuilt as
+part of that <code class="docutils literal">readline</code> update. This was not going to sit well with me. Why
+spend the time to update several packages, only to rebuild them in another day
+or two with a new <cite>Python</cite> version? And so I waited some&nbsp;more.</p>
+<div class="section" id="wednesday-python-day">
+<h2>Wednesday: Python&nbsp;day!</h2>
+<p>Wow, was I excited when I woke up Wednesday morning! Had the day off work (for
+other reasons &#8212; not specifically Python related) so the whole day is mine for
+updating and shenanigans. Unfortunately, when I ran my first <code class="docutils literal"><span class="pre">eix-diff</span></code> of the
+day, nothing. Tried a little <code class="docutils literal">portageq</code> action as well, to check the actual
+values of <code class="docutils literal">PYTHON_TARGETS</code> and <code class="docutils literal">PYTHON_SINGLE_TARGET</code> to no avail. The
+thought did not occur to me until then that there was no set schedule for the
+profile update. It will be available when it&#8217;s&nbsp;ready.</p>
+<p>Not going to let that get me down though. I found other ways to occupy my time.
+Namely a whole lot of <a class="reference external" href="https://thewitcher.com/witcher3">Witcher 3</a>. Thankfully, that game was more than enough
+to pass the time. And could even be said to be the main reason I ended up
+running the actual update the following day. Either way, I sneaked in a couple
+extra <code class="docutils literal">emerge sync</code> throughout the day, waiting to see when the new targets
+were actually pushed&nbsp;out.</p>
+<p>Later in the afternoon, they finally came, and initially I was presented with
+a whole slew of errors. Unfortunately, I did not think to save them. Mostly
+they were errors about inability to build certain packages with the new targets.
+Some of my installed packages had not yet been updated to 3.7. Due to the fact
+that those particular packages were <em>not</em> things I use regularly, or really at
+all anymore, the fix was simple. Remove them. Just a couple packages to remove
+and <code class="docutils literal">depclean</code> and we&#8217;re in&nbsp;business.</p>
+<p>Just a little more back and forth with that process until <cite>Portage</cite> finally
+stopped complaining, and I was presented with a quite large list of packages
+to rebuild or update. By this time, it was already nearing 10pm, and with work
+starting in another 8 hours, it was time for bed. Though I was glad knowing I
+had already handled the bulk of the hard work and can simply let it run after&nbsp;work.</p>
+</div>
+<div class="section" id="thursday-make-it-so">
+<h2>Thursday: Make it&nbsp;so</h2>
+<p>Little fast forward action and we&#8217;re back at home. Double, and triple check
+once more. Make sure everything looks sane. <em>Only</em> 126 packages on my list. No
+big deal. <code class="docutils literal">emerge @world</code> &#8212; get it&nbsp;going!</p>
+<p>My original estimate on the total build time was about 3 hours, possibly up to
+4. Much to my surprise, the <code class="docutils literal">@world</code> update took <em>exactly</em> two hours. Good
+stuff! During a couple packages, I was quite a bit anxious. A friend of mine
+mentioned having a lot of package slot errors, and some trouble getting
+<cite>Portage</cite> to update at one point. I&#8217;m not sure what the cause of their errors
+was, but I (very thankfully) did not encounter&nbsp;any.</p>
+<p>With the update complete, I went ahead and updated the default Python version
+through <code class="docutils literal">eselect python</code>, and verified the new version loads properly. Hit
+up a <code class="docutils literal">emerge <span class="pre">@preserved-rebuild</span></code> as well, which required the <cite>Python 3.6</cite> to
+be rebuilt against the new <code class="docutils literal">readline</code>. Not sure why this did not happen in
+place with the others, but it went just fine. Finally, the small process to
+restart several daemons/services running which depend on either <code class="docutils literal">readline</code> or
+<cite>Python</cite>, followed by a re-login to my <cite>X</cite> session and we&#8217;re almost through. My
+last set of things to check was my own <cite>Python</cite> projects. With the exception of
+one, which was not properly using a <cite>virtual environment</cite>, everything handled
+the update flawlessly. Color me&nbsp;impressed.</p>
+</div>
+<div class="section" id="thank-you-gentoo-python-team">
+<h2>Thank you, Gentoo Python&nbsp;Team</h2>
+<p>In the end, this was a fairly large update, with a lot of behind the scenes work
+by the <a class="reference external" href="https://www.gentoo.org/inside-gentoo/developers/">Gentoo Developers</a>, the <a class="reference external" href="https://wiki.gentoo.org/wiki/Project:Python">Gentoo Python Team</a>, and of course the
+package maintainers and developers of the actual packages which use <cite>Python</cite>.
+I have noticed a huge uptick in <cite>Python</cite> related package work over the past
+couple of months, at least. This work has not gone unnoticed, and I am very
+thankful to have such a great team working to continue improving <cite>Gentoo</cite>.</p>
+<p>Very big thanks goes out to the maintainers and developers who helped to ensure
+this process went smooth and easy as best they could. No major version update
+is going to be without problems, especially if the package being updated is
+part of the &#8220;core&#8221; required packages by that distribution. The work put in over
+the past couple months has done a great deal in helping to ensure there were as
+few issues as possible. Thank you all for the hard work and dedicated. I truly
+do appreciate the effort and care put into your work. Thank you for helping to
+make <cite>Gentoo</cite> the one <cite>Linux</cite> distribution that truly feels like &#8220;home&#8221; to&nbsp;me.</p>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../../../tags/gentoo/" rel="tag">gentoo</a></li>
+            <li><a class="tag p-category" href="../../../../tags/linux/" rel="tag">linux</a></li>
+            <li><a class="tag p-category" href="../../../../tags/portage/" rel="tag">portage</a></li>
+            <li><a class="tag p-category" href="../../../../tags/python/" rel="tag">python</a></li>
+            <li><a class="tag p-category" href="../../../../tags/python3/" rel="tag">python3</a></li>
+            <li><a class="tag p-category" href="../../../../tags/thoughts/" rel="tag">thoughts</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../04/something-new-is-brewing/" rel="prev" title="Something new is brewing!">Previous&nbsp;post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content-->
+</div>
+<aside class="col-md-4 blog-sidebar"><div class="sticky-top">
+<div class="p-3 mb-3 bg-light rounded">
+    <h4 class="font-italic">About</h4>
+    <p class="mb-0">Welcome to my blog! The look and feel of this site is currently a work-in-progress. Check back soon for more&nbsp;updates!</p>
+    <p class="mb-0">Check out the sources on <a href="https://github.com/ncdulo/ncdulo.github.io/">GitHub</a>!</p>
+</div>
+        <div class="p3">
+<h4 class="font-italic">Categories</h4>
+        <ol class="list-unstyled mb-0">
+<li>Automatic listing not yet&nbsp;implemented.</li>
+        <li>Please use the categories link in the header&nbsp;navigation.</li>
+        </ol>
+</div>
+        </div></aside>
+</div>
+    </div>
+</div>
+<footer class="blog-footer" id="footer">
+    Contents © 2020 <a href="https://github.com/ncdulo">ncdulo</a> - Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a> <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Intl License" style="border-width:0; margin-bottom:12px;" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"></a>
+    
+    
+</footer><script src="../../../../assets/js/jquery.min.js"></script><script src="../../../../assets/js/popper.min.js"></script><script src="../../../../assets/js/bootstrap.min.js"></script><script src="../../../../assets/js/baguetteBox.min.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>
