@@ -8,7 +8,7 @@
 .. type: text
 
 As I wrote in `another post`_ a few weeks ago, `Gentoo` has officially made
-the switch. The new default `Python` version is `Python 3.7`! I'm was not
+the switch. The new default `Python` version is `Python 3.7`! I was not
 totally sure just *what* to expect with this update. Surely some things would
 go wrong, and I would encounter some issues somewhere. As it turns out, I was
 wrong.
