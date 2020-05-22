@@ -94,7 +94,7 @@ various terminals. The lack of a decent GUI version was a bit limiting in it's
 own way. Not that I want flashy UI elements, or toolbars and such. I just find
 a certain appeal to being able to launch my editor of choice in a dedicated
 window and keep it open at all times. `GVim` was not my idea of that. I was
-feeling limited, and watching much of the `Muthical Crew` get themselves onto
+feeling limited, and watching much of the `Mythical Crew` get themselves onto
 `Emacs` made me realize more what I was missing out on.
 
 Yet I didn't want to go totally back to `Emacs`. I would have to re-learn the
