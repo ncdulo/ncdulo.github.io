@@ -2,7 +2,14 @@
 <?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>/dev/ncdulo</title><link>https://ncdulo.github.io/</link><description>/dev/ncdulo is a blog, project showcase, and collection of thoughts. Explore and learn with tutorials, opinions and guides about Gentoo Linux, Python, Web Development, and a variety of other topics. Beginner or expert alike -- come see what's new!</description><atom:link href="https://ncdulo.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="https://github.com/ncdulo"&gt;ncdulo&lt;/a&gt; &lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Intl License"
 style="border-width:0; margin-bottom:12px;"
-src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Fri, 08 May 2020 22:34:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Python 3.7: Smoother than expected</title><link>https://ncdulo.github.io/posts/2020/05/python-37-smoother-than-expected/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;As I wrote in &lt;a class="reference external" href="https://ncdulo.github.io/posts/2020/04/python3-out-with-the-old-in-with-the-new/"&gt;another post&lt;/a&gt; a few weeks ago, &lt;cite&gt;Gentoo&lt;/cite&gt; has officially made
+src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Fri, 22 May 2020 23:08:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Doom Emacs -- Best of both worlds?</title><link>https://ncdulo.github.io/posts/2020/05/doom-emacs-best-of-both-worlds/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;For a couple months last year, I became borderline obsessed with &lt;a class="reference external" href="https://www.gnu.org/software/emacs/"&gt;Emacs&lt;/a&gt;. While
+initially a massive learning curve to begin grasping I found it extremely
+powerful and intriguing. The first few days were quite challenging but I was
+slowly finding my way through and thoroughly enjoying myself. Realizing the
+power that was in my hands with &lt;cite&gt;Emacs Lisp&lt;/cite&gt;, I couldn't help but dive headfirst
+into configuring and tweaking into the perfect development and editor for
+myself.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://ncdulo.github.io/posts/2020/05/doom-emacs-best-of-both-worlds/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>doom</category><category>thoughts</category><guid>https://ncdulo.github.io/posts/2020/05/doom-emacs-best-of-both-worlds/</guid><pubDate>Fri, 22 May 2020 00:15:13 GMT</pubDate></item><item><title>Python 3.7: Smoother than expected</title><link>https://ncdulo.github.io/posts/2020/05/python-37-smoother-than-expected/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;As I wrote in &lt;a class="reference external" href="https://ncdulo.github.io/posts/2020/04/python3-out-with-the-old-in-with-the-new/"&gt;another post&lt;/a&gt; a few weeks ago, &lt;cite&gt;Gentoo&lt;/cite&gt; has officially made
 the switch. The new default &lt;cite&gt;Python&lt;/cite&gt; version is &lt;cite&gt;Python 3.7&lt;/cite&gt;! I was not
 totally sure just &lt;em&gt;what&lt;/em&gt; to expect with this update. Surely some things would
 go wrong, and I would encounter some issues somewhere. As it turns out, I was
@@ -69,23 +76,4 @@ factors can really take a lot of stress off the mind. As the Coronavirus
 pandemic continues to work through our world, there is a greater growing
 interest in DIY once again. Seems as good a time as any to go over some of my
 own ways for saving money, and getting things done on my own.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://ncdulo.github.io/posts/2020/04/saving-money-sanity/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>coronavirus</category><category>diy</category><category>money</category><category>saving</category><guid>https://ncdulo.github.io/posts/2020/04/saving-money-sanity/</guid><pubDate>Tue, 21 Apr 2020 09:05:12 GMT</pubDate></item><item><title>Before you deploy ...</title><link>https://ncdulo.github.io/posts/2020/04/before-you-deploy/</link><dc:creator>ncdulo</dc:creator><description>&lt;div&gt;&lt;p&gt;As a quick reminder -- before you go ahead and begin committing anything to
-GitHub, there are a few other things you should handle first. Just a quick
-check before going live &lt;code class="docutils literal"&gt;[insert thumbsup emoji]&lt;/code&gt;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Remove test posts&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Alternatively, tidy them up. Make them ready for publish.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Pokemon image (Licensing?)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Remove remaining demo content&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;All around final check of all processes&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Post creation&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;All links and pages working&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Content is correct&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Theme is nice&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>important</category><guid>https://ncdulo.github.io/posts/2020/04/before-you-deploy/</guid><pubDate>Tue, 21 Apr 2020 01:21:50 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="https://ncdulo.github.io/posts/2020/04/saving-money-sanity/"&gt;Read more…&lt;/a&gt; (8 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>coronavirus</category><category>diy</category><category>money</category><category>saving</category><guid>https://ncdulo.github.io/posts/2020/04/saving-money-sanity/</guid><pubDate>Tue, 21 Apr 2020 09:05:12 GMT</pubDate></item></channel></rss>

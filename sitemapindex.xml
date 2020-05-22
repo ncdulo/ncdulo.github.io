@@ -10,12 +10,16 @@
   <lastmod>2020-05-03T15:51:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://ncdulo.github.io/categories/emacs.xml</loc>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://ncdulo.github.io/categories/food.xml</loc>
   <lastmod>2020-05-03T15:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/categories/gentoo.xml</loc>
-  <lastmod>2020-05-03T15:51:00Z</lastmod>
+  <lastmod>2020-05-08T22:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/categories/introspection.xml</loc>
@@ -31,11 +35,11 @@
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/rss.xml</loc>
-  <lastmod>2020-05-08T21:33:00Z</lastmod>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/sitemap.xml</loc>
-  <lastmod>2020-05-08T21:33:00Z</lastmod>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/blog.xml</loc>
@@ -58,12 +62,16 @@
   <lastmod>2020-05-03T15:51:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://ncdulo.github.io/tags/doom.xml</loc>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://ncdulo.github.io/tags/enhancement.xml</loc>
-  <lastmod>2020-05-03T15:51:00Z</lastmod>
+  <lastmod>2020-05-08T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/gentoo.xml</loc>
-  <lastmod>2020-05-03T15:51:00Z</lastmod>
+  <lastmod>2020-05-08T22:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/git.xml</loc>
@@ -75,7 +83,7 @@
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/linux.xml</loc>
-  <lastmod>2020-05-03T15:51:00Z</lastmod>
+  <lastmod>2020-05-08T22:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/meta.xml</loc>
@@ -91,7 +99,7 @@
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/portage.xml</loc>
-  <lastmod>2020-05-03T15:51:00Z</lastmod>
+  <lastmod>2020-05-08T22:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/project.xml</loc>
@@ -99,7 +107,7 @@
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/python.xml</loc>
-  <lastmod>2020-05-03T15:51:00Z</lastmod>
+  <lastmod>2020-05-08T22:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/python2.xml</loc>
@@ -107,7 +115,7 @@
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/python3.xml</loc>
-  <lastmod>2020-05-03T15:51:00Z</lastmod>
+  <lastmod>2020-05-08T22:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/saving.xml</loc>
@@ -115,11 +123,11 @@
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/thoughts.xml</loc>
-  <lastmod>2020-05-03T15:51:00Z</lastmod>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/tweak.xml</loc>
-  <lastmod>2020-05-03T15:51:00Z</lastmod>
+  <lastmod>2020-05-08T22:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://ncdulo.github.io/tags/webdev.xml</loc>

@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ncdulo.github.io/</loc>
-  <lastmod>2020-05-03T13:52:00Z</lastmod>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/2020/</loc>
@@ -23,15 +23,19 @@
  </url>
  <url>
   <loc>https://ncdulo.github.io/archive.html</loc>
-  <lastmod>2020-05-08T21:33:00Z</lastmod>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/categories/</loc>
-  <lastmod>2020-04-30T23:20:00Z</lastmod>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/categories/devncdulo/</loc>
   <lastmod>2020-04-30T23:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/categories/emacs/</loc>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/categories/food/</loc>
@@ -52,6 +56,10 @@
  <url>
   <loc>https://ncdulo.github.io/galleries/</loc>
   <lastmod>2020-04-30T23:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/index-1.html</loc>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/listings/</loc>
@@ -98,12 +106,16 @@
   <lastmod>2020-05-01T00:24:00Z</lastmod>
  </url>
  <url>
+  <loc>https://ncdulo.github.io/posts/2020/05/doom-emacs-best-of-both-worlds/</loc>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ncdulo.github.io/posts/2020/05/python-37-smoother-than-expected/</loc>
   <lastmod>2020-05-08T21:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/</loc>
-  <lastmod>2020-04-30T23:20:00Z</lastmod>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/blog/</loc>
@@ -124,6 +136,10 @@
  <url>
   <loc>https://ncdulo.github.io/tags/diy/</loc>
   <lastmod>2020-04-30T23:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ncdulo.github.io/tags/doom/</loc>
+  <lastmod>2020-05-22T00:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://ncdulo.github.io/tags/enhancement/</loc>
