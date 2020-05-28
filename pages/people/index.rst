@@ -18,7 +18,7 @@ particular order, we've got...
   stages of completion.
 
 `phate`_
-  Creator of `rsfetch`_, and other utilities. Ring 1 Mythical status, Rustacean,
+  Creator of `rsfetch`_, `rsPhate`_, and others. Ring 1 Mythical status, Rustacean,
   Elder Scrolls loremaster.
 
 `arctic`_
@@ -59,6 +59,7 @@ no particular order here for now. If anything, the order they appear on my GitHu
 .. _`shardion`: https://github.com/TheAlcanian
 
 .. _`rsfetch`: https://github.com/rsfetch/rsfetch
+.. _`rsPhate`: https://github.com/Phate6660/rsphate
 .. _`pyrobot`: https://github.com/TheAlcanian/pyrobot
 
 .. _`Michal Górny`: https://github.com/mgorny
