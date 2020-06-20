@@ -2,7 +2,7 @@
 .. slug: something-new-is-brewing
 .. date: 2020-04-30 20:24:12 UTC-04:00
 .. updated: 2020-04-30 21:07:00 UTC-04:00
-.. status: featured
+.. status: published
 .. tags: nikola, blog, webdev
 .. category: devncdulo
 .. link:

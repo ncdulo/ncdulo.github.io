@@ -1,7 +1,7 @@
 .. title: Doom Emacs -- Best of both worlds?
 .. slug: doom-emacs-best-of-both-worlds
 .. date: 2020-05-21 20:15:13 UTC-04:00
-.. modified: 2020-05-22 19:03:38 UTC-04:00
+.. updated: 2020-05-22 19:03:38 UTC-04:00
 .. tags: thoughts, doom
 .. category: emacs
 .. link:
